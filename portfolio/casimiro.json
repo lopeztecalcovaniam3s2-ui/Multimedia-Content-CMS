@@ -1,0 +1,28 @@
+{
+  "data":{
+    "name":"Casimiro",
+    "lastName":"Damian",
+    "address":"Naranjal",
+    "birthdate":"2009-09-20",
+    "hobbies":["games","exercise","eat" ]
+  },
+  
+"friends":[
+  {
+  "name":"Adolfo",
+    "lastName":"arzabal",
+  },
+  {
+    "name":"Tadeo",
+    "lastName":"olivares",
+  },
+  {
+    "name":"Vania",
+    "lastName":"lopez",
+  },
+  {
+    "name":"Uriel",
+    "lastName":"lopez",
+  },
+]
+}
