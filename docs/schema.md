@@ -1,39 +1,35 @@
-# Multimedia CMS - Database Schema
+erDiagram
+    POSTS {
+        ObjectId _id PK
+        string type
+        string title
+        string slug
+        string[] tags
+        date createdAt
+    }
 
-Este esquema representa el modelo documental del sistema (NoSQL).
+    MEDIA_TEXT {
+        string body
+    }
 
-```mermaid
-classDiagram
+    MEDIA_IMAGE {
+        string imageUrl
+        string altText
+        string caption
+    }
 
-class Post {
-  +ObjectId _id
-  +string title
-  +string content
-  +string[] tags
-  +date createdAt
-  +Media[] media
-  +Comment[] comments
-}
+    MEDIA_VIDEO {
+        string videoUrl
+        string provider
+        number durationSeconds
+    }
 
-class Media {
-  +string type
-  +string url
-}
+    INDEXES {
+        TextIndex title_body
+        MultikeyIndex tags
+    }
 
-class Comment {
-  +ObjectId userId
-  +string content
-  +date createdAt
-}
-
-class User {
-  +ObjectId _id
-  +string name
-  +string email
-  +date createdAt
-}
-
-User "1" --> "many" Post : creates
-Post "1" *-- "many" Media : embeds
-Post "1" *-- "many" Comment : embeds
-```
+    POSTS ||--o| MEDIA_TEXT : "embedded (type=text)"
+    POSTS ||--o| MEDIA_IMAGE : "embedded (type=image)"
+    POSTS ||--o| MEDIA_VIDEO : "embedded (type=video)"
+    POSTS ||--|| INDEXES : "optimized by"
