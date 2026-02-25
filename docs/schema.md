@@ -9,7 +9,7 @@ POSTS {
     string title
     string slug
     string[] tags
-    date createdAt
+    
 }
 MEDIA_TEXT {
     string body
