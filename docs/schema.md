@@ -29,14 +29,4 @@ POSTS ||--o| MEDIA_IMAGE : "embedded type=image"
 POSTS ||--o| MEDIA_VIDEO : "embedded type=video"
 ```
 
-## Indexes
-| Field | Index Type | Purpose |
-|-------|-----------|---------|
-| `title` | Text Index | Full-text search |
-| `body` | Text Index | Full-text search |
-| `tags` | Multikey Index | Filter by tag |
 
-## Notes
-- `MEDIA_*` are **not** separate collections — they are embedded objects inside `POSTS`
-- `type` field acts as a switch: `text` / `image` / `video`
-- Max document size: 16MB (MongoDB limit)
