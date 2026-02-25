@@ -3,7 +3,7 @@
 Este esquema representa el modelo documental del sistema (NoSQL).
 
 ```mermaid
-classDiagram
+erDiagram
 
 class Post {
   +ObjectId _id
