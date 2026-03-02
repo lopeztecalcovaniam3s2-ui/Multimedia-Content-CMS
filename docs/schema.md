@@ -4,34 +4,34 @@
 ```mermaid
 erDiagram
 POSTS {
-    string _id PK
+    ObjectId id PK
     string type
     string title
     string slug
     string[] tags
-    
+    date createdAt
 }
 
 MEDIA_TEXT {
-    int id PK
+    
     string body
-    string post_id FK
+    
 }
 
 MEDIA_IMAGE {
-    int id PK
+    
     string imageUrl
     string altText
     string caption
-    string image_id FK
+    
 }
 
 MEDIA_VIDEO {
-    int id PK
+    
     string videoUrl
     string provider
     number durationSeconds
-    string video_id FK
+    
 
 }
 
