@@ -6,17 +6,21 @@ USERS{
     ObjectId _id PK  
     string username
     string email
-    string role
     date createdAt
 }
 POSTS {
-    ObjectId id PK
+    ObjectId _id PK
     string type
     string title
     string slug
     string[] tags
+    string author_username
+    string author_email
+    string author_role
     date createdAt
 }
+
+
 MEDIA_TEXT {
 
     string body
@@ -36,7 +40,7 @@ MEDIA_VIDEO {
     number durationSeconds
 
 }
-USERS ||--o| POSTS : "embedded type=text"
+USERS ||--o{ POSTS : "authored by" 
 POSTS ||--o| MEDIA_TEXT : "embedded type=text"
 POSTS ||--o| MEDIA_IMAGE : "embedded type=image"
 POSTS ||--o| MEDIA_VIDEO : "embedded type=video"
