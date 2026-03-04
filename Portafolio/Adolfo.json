@@ -1,0 +1,31 @@
+{
+  "data": {
+    "name": "Adolfo",
+    "lastName": "Arzabal Flores",
+    "address": "Cordoba Ver",
+    "birthdate": "2009-04-14",
+    "hobbies": ["sleep", "exercise"]
+  },
+  "friends": [
+    {
+      "name": "casimiro",
+      "lastName": "damian tepole",
+      "birthdate": "2009-09-14"
+    },
+    {
+      "name": "eduardo",
+      "lastName": "avila ramirez",
+      "birthdate": "2009-09-14"
+    },
+    {
+      "name": "fernando",
+      "lastName": "luna morales",
+      "birthdate": "2009-09-14"
+    },
+    {
+      "name": "david",
+      "lastName": "torres noseque",
+      "birthdate": "2009-09-14"
+    }
+  ]
+}
