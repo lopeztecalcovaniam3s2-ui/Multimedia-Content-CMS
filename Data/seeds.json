@@ -1,6 +1,6 @@
 // ==========================================
 // Collection: users
-// Represents the owner and their embedded post
+// Represents the owner and their embedded posts
 // ==========================================
 {
   "_id": {
