@@ -1,1 +1,11 @@
-
+// ==========================================
+// Collection: users
+// Represents the owner and their embedded post
+// =========================================={
+  "_id": {
+    "$oid": "69a74087fbb43f945ff173c8"
+  },
+  "username": "Chofo",
+  "email": "Chofo@email.com",
+  "createdAt": "2024-01-15T10:00:00Z"
+}
