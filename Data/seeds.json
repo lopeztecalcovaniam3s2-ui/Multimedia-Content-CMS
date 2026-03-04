@@ -12,3 +12,29 @@
 }
 // Choose your post type posts.
 // This allows you to customize your information to suit your preferences.
+{
+  "_id": {
+    "$oid": "69a73f9dfbb43f945ff173c4"
+  },
+  "type": "text",
+  "title": "Introducción a NoSQL",
+  "slug": "intro-nosql",
+  "tags": [
+    "mongodb",
+    "database"
+  ],
+  "author": {
+    "username": "Adrian",
+    "email": "example123@mail.com",
+    "role": "viewer"
+  },
+  "createdAt": "2024-01-15T10:00:00Z",
+  "body": "Example1234"
+}
+// Once you have submitted your posts type, your information will be received in text, image, or video format, depending on your selection.
+```
+
+### ¿Cuáles son embebidas y cuáles referenciadas?
+
+**1. Users (Entidad Embebida / Embedded)**
+Los usuarios se guardan y posteriormente son enviados a su `posts`
