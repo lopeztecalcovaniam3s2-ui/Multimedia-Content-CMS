@@ -39,3 +39,5 @@
 **1. Users (Entidad Embebida / Embedded)**
 
 Los usuarios se guardan y posteriormente son enviados a su `posts`
+
+-**¿Por qué?**
