@@ -1,7 +1,7 @@
 # CMS Multimedia - NoSQL Data Model
 ## Collections Design
 ```mermaid
-dded type=video"
+
 erDiagram
 
 USERS {
