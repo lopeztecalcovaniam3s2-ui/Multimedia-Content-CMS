@@ -1,1 +1,47 @@
-/
+// ============================================
+// S8 - CRUD: Read | Consultas Básicas
+// Colección: users
+// ============================================
+
+
+// 1. find() — Buscar TODOS los usuarios
+db.users.find({})
+
+
+// 2. Buscar por role = "admin"
+db.users.find({ role: "admin" })
+
+
+// 3. Buscar usuarios activos
+db.users.find({ active: true })
+
+
+// 4. Admin Y activo (AND lógico)
+db.users.find({ role: "admin", active: true })
+
+
+// 5. findOne() — Un usuario por email
+db.users.findOne({ email: "carlos.mendoza@email.com" })
+
+
+// 6. findOne() — Un usuario por username
+db.users.findOne({ username: "carlosmendoza" })
+
+
+// 7. Proyección — Solo nombre y email (sin password)
+db.users.find({}, { name: 1, email: 1, _id: 0 })
+
+
+// 8. Proyección — Perfil público
+db.users.find({}, { name: 1, username: 1, role: 1, _id: 0 })
+
+
+// 9. Admins activos con proyección
+db.users.find(
+  { role: "admin", active: true },
+  { name: 1, email: 1, _id: 0 }
+)
+
+
+// 10. Usuarios inactivos
+db.users.find({ active: false })
