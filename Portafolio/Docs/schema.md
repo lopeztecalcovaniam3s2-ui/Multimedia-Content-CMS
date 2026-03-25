@@ -3,11 +3,22 @@
 ```mermaid
 flowchart LR
 
-    USERS["USERS<br>_id (PK)<br>nombre<br>email"]
+    USERS["<b>USERS</b><br>------------------<br>
+    _id: ObjectId (PK)<br>
+    nombre: string<br>
+    email: string"]
 
-    INTERACCION["INTERACCION<br>_idUsuario (FK)<br>postId (FK)<br>rol"]
+    INTERACCION["<b>INTERACCION</b><br>------------------<br>
+    _idUsuario: ObjectId (FK)<br>
+    postId: ObjectId (FK)<br>
+    rol: string"]
 
-    POSTS["POSTS<br>_id (PK)<br>title<br>type<br>slug<br>tags"]
+    POSTS["<b>POSTS</b><br>------------------<br>
+    _id: ObjectId (PK)<br>
+    title: string<br>
+    type: string<br>
+    slug: string<br>
+    tags: string[]"]
 
     USERS -- "1:N" --> INTERACCION
     POSTS -- "1:N" --> INTERACCION
