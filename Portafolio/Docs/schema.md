@@ -1,6 +1,6 @@
 # CMS Multimedia - NoSQL Data Model
 ## Collections Design
-mermaid
+```mermaid
 
 erDiagram
 
