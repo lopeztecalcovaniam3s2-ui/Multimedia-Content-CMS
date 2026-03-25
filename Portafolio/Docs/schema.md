@@ -10,10 +10,10 @@ USERS {
      string email
 }
 
-ROLES {
-    ObjectId _id PK
-    string roleName
-    string description
+Interacción {
+    ObjectId _idUsuario Fk
+    string postid Fk
+    string rol
 }
 
 POSTS {
