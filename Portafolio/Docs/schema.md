@@ -5,11 +5,9 @@
 erDiagram
 
 USERS {
-    ObjectId _id PK
-    string username
-    string email
-    ObjectId role_id
-    date createdAt
+     _id PK
+     nombre
+     email
 }
 
 ROLES {
