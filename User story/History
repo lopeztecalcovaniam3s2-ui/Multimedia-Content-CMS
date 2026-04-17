@@ -8,6 +8,7 @@ Criterios de aceptación:
 Username y email deben ser únicos
 La contraseña se guarda en hash
 Se crea el usuario en la colección USERS
+
 Se retorna un token (JWT)
 HU-02: Inicio de sesión
 Como usuario registrado
@@ -17,6 +18,7 @@ Criterios de aceptación:
 Validación de email + contraseña
 Retorno de JWT válido
 Manejo de error si credenciales incorrectas
+
 ÉPICA 2: Gestión de publicaciones
 HU-03: Crear publicación
 Como usuario autenticado
@@ -27,6 +29,7 @@ Se guarda author_id, username y avatar como snapshot
 Puede incluir texto y/o media_url
 likes_count inicia en 0
 editors inicia vacío
+
 Se guarda fecha de creación
 HU-04: Ver feed global
 Como usuario
@@ -35,6 +38,7 @@ Para descubrir contenido
 Criterios de aceptación:
 Se listan posts ordenados por created_at DESC
 Se muestran username, avatar, contenido y media
+
 Se incluye likes_count
 HU-05: Ver perfil de usuario
 Como usuario
@@ -43,6 +47,7 @@ Para ver sus publicaciones
 Criterios de aceptación:
 Se muestra username, avatar, bio
 Se listan sus posts
+
 ÉPICA 3: Interacciones (likes)
 HU-06: Dar/Quitar like
 Como usuario autenticado
@@ -53,6 +58,7 @@ Si no existe like → se crea
 Si ya existe → se elimina (toggle)
 Se actualiza likes_count
 Un usuario solo puede dar 1 like por post
+
 ÉPICA 4: Colaboración en posts (roles)
 HU-07: Agregar editor a un post
 Como autor de un post
@@ -61,6 +67,7 @@ Para que puedan modificar el contenido
 Criterios de aceptación:
 Solo el author_id puede agregar editores
 Se agrega en editors[] con role
+
 No se permiten duplicados
 HU-08: Editar publicación
 Como autor o editor
@@ -70,6 +77,7 @@ Criterios de aceptación:
 Solo author o usuarios en editors pueden editar
 Se puede modificar content, media_url, tags
 No se modifica author
+
 Historias opcionales (si hay tiempo)
 HU-09: Eliminar publicación
 Como autor
