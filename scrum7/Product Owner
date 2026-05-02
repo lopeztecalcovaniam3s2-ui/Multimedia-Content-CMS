@@ -1,0 +1,25 @@
+Product Owner:
+- Objetivo del producto
+Crear una plataforma tipo red social multimedia donde los usuarios puedan:
+Publicar contenido (imágenes, videos, texto)
+Interactuar (likes, comentarios)
+Seguir a otros usuarios
+Consumir contenido personalizado
+- Alcance inicial (MVP)
+Vamos a evitar que el proyecto se vuelva inmanejable. Primer versión:
+ Incluye:
+Registro e inicio de sesión
+Perfil de usuario
+Publicación de contenido (imagen + texto mínimo)
+Feed básico (contenido de usuarios seguidos)
+Sistema de seguidores
+Likes
+ No incluye (por ahora):
+Mensajería privada
+Algoritmos complejos de recomendación
+Streaming en vivo
+Notificaciones en tiempo real
+- Arquitectura propuesta
+Frontend: Página web (HTML)
+Backend: API (Node.js recomendado)
+Base de datos: MongoDB (NoSQL)
