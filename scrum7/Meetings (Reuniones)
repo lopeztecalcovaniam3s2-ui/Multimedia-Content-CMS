@@ -1,0 +1,51 @@
+|| METINGS BY SCRUM MASTER ||
+
+1ra Reunion - 23 de marzo 2026
+
+Durante la primera reunion se planteo la re estructuracion del proyecto, debido a una mala organizacion previa y falta de objetivos
+claros, se tomo la decision de empezar de cero con el proyecto y plantear una ruta clara.
+
+Como Scrum Master Plante los siguiente:
+1.- Cambiar el Giro COmercial o Empresarial de "Centro de Contenido" a "Social Media"
+2.- La implementacion de un nuevo Rol "Espevialista en Diseño Web"
+3.- 4 Sprints Principales
+4.- API elegida "Node.js"
+5.- Lenguaje para Frontend: HTML
+6.- Servicio Mongo DB
+
+Con La base para empezar lista
+
+2da Reunion - 13 de abril de 2026
+
+Con el Sprint Cumplido, se determino lo siguiente:
+
+1.- Esquema listo
+2.- Boceto  a Lapiz listo
+3.- Comienzo de la creacion de semillas
+
+3ra Reunion - 20 de abril de 2026
+
+En esta Sesion se lograron Ver los primeros Avances reales dentro del proyecto, Habia ya una maquetacion lista del producto final, aunque con detalles 
+logro cumplir las espectatuvas y comenzo la conexion a MongoDB utilizando  Railway
+
+Detalles importantes:
+1.- Servicio de Railway PAra conectar la Base a Backend
+2.-El disñeador Empieza su propuesta para la siguiente fase del proyecto
+3.- Primer Fedback por patrte de los miembros
+4.- Eleccion de Nombre a la red social
+
+4ta Reunion - 27 de abril de 2026
+
+Aqui es donde el producto final comienza a tomar forma, se logro tene una conexion a la nube gracias al sservicio de "Netlify", ya no es necesario trabajar d eforma local 
+y mediante una url, cualquier usario puede probar nuestro producto.
+
+Detalles importantes:
+1.-Servicio en Linea
+2.-Propuesta del Diseñador INsuficiente
+3.-Logo Listo
+4.-Consultas listas
+
+PRODUCTO FINAL 
+El producto entrara en fase de espera hasta recibir una opinion final en base a lo planteado por el product OWNER
+
+
