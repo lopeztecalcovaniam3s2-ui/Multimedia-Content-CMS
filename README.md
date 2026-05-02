@@ -15,4 +15,4 @@ https://zzzeta.netlify.app/
 |3|The Query Developer. Gil Guzman Guillermo|Constructor MQL. Traduce las preguntas de negocio ("¿Cuántos usuarios...?") a código MongoDB (db.collection.find(...)). Es quien más interactúa con la IA para optimizar filtros.
 |4|The Integration Specialist. Arzabal Flores Adolfo|Configurador del Entorno. Se encarga de crear el Cluster en Atlas o la conexión en Compass. Gestiona los índices básicos y asegura que la conexión no falle. Administra el repositorio GitHub.
 |5|The Data Seeder/ QA. Damian Tepole Casimiro|Generador de Caos. Crea los datos de prueba (archivos JSON ficticios) usando herramientas de IA o Mockaroo. Valida que las consultas del Developer funcionen con datos reales y reporta "bugs".
-|6| Web design specialist/ Olivares Luengas Tadeo de Jesús | ENcaragdo del apartado visual del proyecto, prepara estilos e imagenes para el poyecto|
+|6| Web design specialist/ Olivares Luengas Tadeo de Jesús | Encargado del apartado visual del proyecto, prepara estilos e imagenes para el poyecto|
