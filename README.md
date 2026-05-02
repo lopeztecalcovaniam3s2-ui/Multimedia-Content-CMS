@@ -1,4 +1,5 @@
-# Multimedia-Content-CMS
+# Social Media (Z)
+Centro de multimedia y usuarios 
 Busqueda eficiente por texto (text index) infiltrado por etiquetas (multikey index)
 
 👥 # Roles de trabajo
