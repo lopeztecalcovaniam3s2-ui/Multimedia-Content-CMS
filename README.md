@@ -5,7 +5,7 @@ Busqueda eficiente por texto (text index) infiltrado por etiquetas (multikey ind
 # Visita nuestra WEB
 https://zzzeta.netlify.app/
 
-👥 # Roles de trabajo
+# 👥 Roles de trabajo
 
 "
 |Rol|Nombre técnico|Responsabilidad principal|
