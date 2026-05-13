@@ -8,35 +8,6 @@ El principal problema que busca resolver es la dificultad de contar con un espac
 Este proyecto debería importarle al usuario porque le permite expresarse, compartir intereses y descubrir contenido de manera cómoda y atractiva. Además, la plataforma está diseñada para brindar una experiencia fluida y agradable, haciendo que publicar, explorar e interactuar con otros usuarios sea algo sencillo y entretenido. 
 
 # Guia de inicio 📜
-Al entrar al programa se tiene acceso al contenido
-
-<img width="703" height="368" alt="image" src="https://github.com/user-attachments/assets/ae3449b1-7de3-4d21-ba9e-b73dda878aa7" />
-
-Se debe crear una cuenta en "inicio de sesion" para agregar posts
-
-<img width="702" height="371" alt="image" src="https://github.com/user-attachments/assets/732e9af3-0adb-45c2-8e94-010978e1d312" />
-
-Tendras estas opciones para tu registro 
-
-<img width="703" height="449" alt="image" src="https://github.com/user-attachments/assets/022e1a72-5ea3-4e6a-bcc3-87df547d4b43" />
-
-Al tener tu cuenta ya creada podras crear posts sin ningun problema 
-
-<img width="705" height="370" alt="image" src="https://github.com/user-attachments/assets/ffab4b15-d9bb-43a3-990f-1a35617925ef" />
-
-Al crear tu posts debes poner obligatoriamente una descripcion
-
-Ojo 👀
-
--Debes agregar una imagen o video a base de un link                                                                                                                                                                                                           
--Para la imagen debe tener terminacion "jpg"
-
-<img width="706" height="536" alt="image" src="https://github.com/user-attachments/assets/1cacd863-bb4f-4ff2-9e50-6eaba8712f8a" />
-
-Y listo, ya creaste tu posts 
-
-<img width="707" height="349" alt="image" src="https://github.com/user-attachments/assets/41a98887-c2c2-4271-b6a1-d25bcacce910" />
-
 
 # Visita nuestra WEB 📲
 https://zzzeta.netlify.app/
