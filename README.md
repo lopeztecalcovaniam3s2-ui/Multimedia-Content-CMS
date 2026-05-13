@@ -15,6 +15,7 @@ Se debe crear una cuenta en "inicio de sesion" para agregar posts
 <img width="702" height="371" alt="image" src="https://github.com/user-attachments/assets/732e9af3-0adb-45c2-8e94-010978e1d312" />
 
 Tendras estas opciones para tu registro 
+
 <img width="703" height="449" alt="image" src="https://github.com/user-attachments/assets/022e1a72-5ea3-4e6a-bcc3-87df547d4b43" />
 
 
