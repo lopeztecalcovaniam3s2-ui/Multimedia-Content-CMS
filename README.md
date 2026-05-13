@@ -9,9 +9,11 @@ Este proyecto debería importarle al usuario porque le permite expresarse, compa
 
 # Guia de inicio 
 Al entrar al programa se tiene acceso al contenido
+
 <img width="703" height="368" alt="image" src="https://github.com/user-attachments/assets/ae3449b1-7de3-4d21-ba9e-b73dda878aa7" />
 
 Se debe crear una cuenta en "inicio de sesion" para agregar posts
+
 <img width="702" height="371" alt="image" src="https://github.com/user-attachments/assets/732e9af3-0adb-45c2-8e94-010978e1d312" />
 
 Tendras estas opciones para tu registro 
@@ -19,6 +21,7 @@ Tendras estas opciones para tu registro
 <img width="703" height="449" alt="image" src="https://github.com/user-attachments/assets/022e1a72-5ea3-4e6a-bcc3-87df547d4b43" />
 
 Al tener tu cuenta ya creada podras crear posts sin ningun problema 
+
 <img width="705" height="370" alt="image" src="https://github.com/user-attachments/assets/ffab4b15-d9bb-43a3-990f-1a35617925ef" />
 
 
