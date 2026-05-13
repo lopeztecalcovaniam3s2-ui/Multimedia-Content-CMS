@@ -7,6 +7,8 @@ El principal problema que busca resolver es la dificultad de contar con un espac
 
 Este proyecto debería importarle al usuario porque le permite expresarse, compartir intereses y descubrir contenido de manera cómoda y atractiva. Además, la plataforma está diseñada para brindar una experiencia fluida y agradable, haciendo que publicar, explorar e interactuar con otros usuarios sea algo sencillo y entretenido. 
 
+#Guia de inicio 
+mn
 
 # Visita nuestra WEB
 https://zzzeta.netlify.app/
