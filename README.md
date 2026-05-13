@@ -27,6 +27,7 @@ Al tener tu cuenta ya creada podras crear posts sin ningun problema
 Al crear tu posts debes poner obligatoriamente una descripcion
 
 Ojo 👀
+
 -Debes agregar una imagen o video a base de un link
 
 -Para la imagen debe tener terminacion "jpg"
