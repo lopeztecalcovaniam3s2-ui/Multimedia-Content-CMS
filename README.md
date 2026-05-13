@@ -12,7 +12,12 @@ Este proyecto debería importarle al usuario porque le permite expresarse, compa
 Para saber la organización del equipo se utiliza Github.com donde todos tienen el permiso de remodelar lo que gusten.                                                                                                                                           
 https://github.com/lopeztecalcovaniam3s2-ui/Multimedia-Content-CMS
 
-Para las conexiones con la base de datos se utiliza el programa MongoDB
+Para almacenar datos se utiliza eñ servicio de MongoDB, la url de conexion es la siguiente:
+
+
+El servicio que conecta el backend con la base de datos es Raillway, aqui se encuentran alojados Los servicios de MongoDB y Github con su respectivo contenido.
+
+Aqui contiene el frontend y lo hace publico.
 
 
 # Visita nuestra WEB 📲
