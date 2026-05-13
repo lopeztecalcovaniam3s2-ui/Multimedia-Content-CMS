@@ -24,6 +24,14 @@ Al tener tu cuenta ya creada podras crear posts sin ningun problema
 
 <img width="705" height="370" alt="image" src="https://github.com/user-attachments/assets/ffab4b15-d9bb-43a3-990f-1a35617925ef" />
 
+Al crear tu posts debes poner obligatoriamente una descripcion
+Ojo 👀
+-Debes agregar una imagen o video a base de un link
+-Para la imagen debe tener terminacion "jpg"
+
+<img width="706" height="536" alt="image" src="https://github.com/user-attachments/assets/1cacd863-bb4f-4ff2-9e50-6eaba8712f8a" />
+
+
 
 # Visita nuestra WEB
 https://zzzeta.netlify.app/
