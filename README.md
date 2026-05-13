@@ -42,7 +42,9 @@ https://zzzeta.netlify.app/
 
 # Tecnologias y herramientas utilizadas 
 
--Netlify                                                                                                                                                                                                                                                      -Railway                                                                                                                                                                                                                                                      -MongoDB
+-Netlify                                                                                                                                                                                                                                                      
+-Railway                                                                                                                                                                                                                                                      
+-MongoDB
 
 
 
