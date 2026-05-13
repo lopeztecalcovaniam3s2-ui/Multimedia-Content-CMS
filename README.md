@@ -34,6 +34,9 @@ Ojo 👀
 
 <img width="706" height="536" alt="image" src="https://github.com/user-attachments/assets/1cacd863-bb4f-4ff2-9e50-6eaba8712f8a" />
 
+Y listo, ya creaste tu posts 
+
+<img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/ebafa13f-8e3f-4f6e-b326-b6b3e4499e81" />
 
 
 # Visita nuestra WEB
