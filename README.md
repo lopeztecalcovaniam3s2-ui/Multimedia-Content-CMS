@@ -28,9 +28,7 @@ Al crear tu posts debes poner obligatoriamente una descripcion
 
 Ojo 👀
 
--Debes agregar una imagen o video a base de un link
-
--Para la imagen debe tener terminacion "jpg"
+-Debes agregar una imagen o video a base de un link                                                                                                                                                                                                           -Para la imagen debe tener terminacion "jpg"
 
 <img width="706" height="536" alt="image" src="https://github.com/user-attachments/assets/1cacd863-bb4f-4ff2-9e50-6eaba8712f8a" />
 
@@ -44,9 +42,7 @@ https://zzzeta.netlify.app/
 
 # Tecnologias y herramientas utilizadas 
 
--Netlify
--Railway
--MongoDB
+-Netlify                                                                                                                                                                                                                                                      -Railway                                                                                                                                                                                                                                                      -MongoDB
 
 
 
