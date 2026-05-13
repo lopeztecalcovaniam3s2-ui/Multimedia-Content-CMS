@@ -1,4 +1,4 @@
-# Social Media (Z)
+# Social Media (Z) 📱
 Centro de multimedia y usuarios 
 
 Este proyecto es una plataforma web enfocada en la publicación y exploración de contenido multimedia, donde los usuarios pueden crear posts, compartir imágenes o publicaciones y descubrir contenido de otros usuarios de forma rápida e intuitiva. La aplicación ofrece una interfaz moderna y dinámica que facilita la interacción dentro de una comunidad digital.
