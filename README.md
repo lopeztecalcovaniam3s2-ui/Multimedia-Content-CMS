@@ -1,7 +1,12 @@
 # Social Media (Z)
 Centro de multimedia y usuarios 
 
-Busqueda eficiente por texto (text index) infiltrado por etiquetas (multikey index)
+Este proyecto es una plataforma web enfocada en la publicación y exploración de contenido multimedia, donde los usuarios pueden crear posts, compartir imágenes o publicaciones y descubrir contenido de otros usuarios de forma rápida e intuitiva. La aplicación ofrece una interfaz moderna y dinámica que facilita la interacción dentro de una comunidad digital.
+
+El principal problema que busca resolver es la dificultad de contar con un espacio simple, visual y accesible para compartir contenido y conectar con otras personas en tiempo real. Muchas plataformas actuales pueden resultar demasiado complejas, saturadas o poco personalizables; por eso, este proyecto apuesta por una experiencia más limpia, rápida y centrada en la interacción social.
+
+Este proyecto debería importarle al usuario porque le permite expresarse, compartir intereses y descubrir contenido de manera cómoda y atractiva. Además, la plataforma está diseñada para brindar una experiencia fluida y agradable, haciendo que publicar, explorar e interactuar con otros usuarios sea algo sencillo y entretenido. 
+
 
 # Visita nuestra WEB
 https://zzzeta.netlify.app/
