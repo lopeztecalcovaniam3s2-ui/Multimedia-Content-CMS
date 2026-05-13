@@ -8,7 +8,11 @@ El principal problema que busca resolver es la dificultad de contar con un espac
 Este proyecto debería importarle al usuario porque le permite expresarse, compartir intereses y descubrir contenido de manera cómoda y atractiva. Además, la plataforma está diseñada para brindar una experiencia fluida y agradable, haciendo que publicar, explorar e interactuar con otros usuarios sea algo sencillo y entretenido. 
 
 # Guia de inicio 
-<img width="1907" height="953" alt="image" src="https://github.com/user-attachments/assets/bd57d7b2-c86e-41e3-b225-3051390bba04" />
+Al entrar al programa se tiene acceso al contenidp 
+<img width="1920" height="1000" alt="image" src="https://github.com/user-attachments/assets/04258874-970c-48aa-ad6b-1033ee9bd49e" />
+
+Se debe crear una cuenta en "inicio de sesion" para agregar posts
+<img width="702" height="371" alt="image" src="https://github.com/user-attachments/assets/732e9af3-0adb-45c2-8e94-010978e1d312" />
 
 
 # Visita nuestra WEB
