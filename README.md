@@ -9,7 +9,7 @@ Este proyecto debería importarle al usuario porque le permite expresarse, compa
 
 # Guia de inicio 
 Al entrar al programa se tiene acceso al contenido
-<img width="1920" height="1000" alt="image" src="https://github.com/user-attachments/assets/04258874-970c-48aa-ad6b-1033ee9bd49e" />
+<img width="703" height="368" alt="image" src="https://github.com/user-attachments/assets/ae3449b1-7de3-4d21-ba9e-b73dda878aa7" />
 
 Se debe crear una cuenta en "inicio de sesion" para agregar posts
 <img width="702" height="371" alt="image" src="https://github.com/user-attachments/assets/732e9af3-0adb-45c2-8e94-010978e1d312" />
