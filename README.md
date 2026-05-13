@@ -18,6 +18,9 @@ Tendras estas opciones para tu registro
 
 <img width="703" height="449" alt="image" src="https://github.com/user-attachments/assets/022e1a72-5ea3-4e6a-bcc3-87df547d4b43" />
 
+Al tener tu cuenta ya creada podras crear posts sin ningun problema 
+<img width="705" height="370" alt="image" src="https://github.com/user-attachments/assets/ffab4b15-d9bb-43a3-990f-1a35617925ef" />
+
 
 # Visita nuestra WEB
 https://zzzeta.netlify.app/
