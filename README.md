@@ -9,6 +9,12 @@ Este proyecto debería importarle al usuario porque le permite expresarse, compa
 
 # Guia de inicio 📜
 
+Para saber la organización del equipo se utiliza Github.com donde todos tienen el permiso de remodelar lo que gusten.                                                                                                                                           
+https://github.com/lopeztecalcovaniam3s2-ui/Multimedia-Content-CMS
+
+Para las conexiones con la base de datos se utiliza el programa MongoDB
+
+
 # Visita nuestra WEB 📲
 https://zzzeta.netlify.app/
 
