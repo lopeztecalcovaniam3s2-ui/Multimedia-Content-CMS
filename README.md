@@ -39,9 +39,14 @@ Y listo, ya creaste tu posts
 <img width="707" height="349" alt="image" src="https://github.com/user-attachments/assets/41a98887-c2c2-4271-b6a1-d25bcacce910" />
 
 
-
 # Visita nuestra WEB
 https://zzzeta.netlify.app/
+
+# Tecnologias y herramientas utilizadas 
+
+-Netlify
+-Railway
+-MongoDB
 
 # 👥 Roles de trabajo
 
