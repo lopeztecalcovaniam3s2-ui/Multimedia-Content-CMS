@@ -33,7 +33,6 @@ https://zzzeta.netlify.app/
 
 #  Roles de trabajo 👥
 
-"
 |Rol|Nombre técnico|Responsabilidad principal|
 |---|--------------|-------------------------|
 |1|Scrum Master. Arzabal Flores Adolfo| Líder servicial y facilitador clave en equipos ágiles, responsable de asegurar la adopción correcta del marco Scrum, eliminar impedimentos ("bloqueos") y proteger al equipo de interrupciones externas. 
