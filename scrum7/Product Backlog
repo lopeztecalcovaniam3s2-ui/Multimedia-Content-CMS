@@ -1,51 +1,55 @@
-- Objetivo del proyecto 🎯
+- Project Objective 🎯
 
-Desarrollar una plataforma digital tipo red social multimedia que permita a los usuarios crear y 
-compartir contenido en diferentes formatos, como imágenes, videos y publicaciones de texto. 
-La plataforma deberá incluir funciones de interacción social, tales como reacciones, likes y comentarios,
-con el fin de fomentar la participación y la comunicación entre los usuarios.
+Develop a multimedia social network platform that allows users to create and share content in different formats, such as images, videos, and text posts.
 
-Además, se integrará un sistema de seguimiento entre perfiles para que cada usuario pueda conectar con otros 
-y mantenerse al tanto de sus publicaciones. También se buscará ofrecer una experiencia más personalizada mediante la 
-visualización de contenido adaptado a los intereses y preferencias de cada usuario, 
-mejorando así la interacción y permanencia dentro de la plataforma.
+The platform should include social interaction features, such as reactions, likes, and comments,
+to encourage participation and communication among users.
 
-- Alcance inicial (MVP) 🥇
+In addition, a profile tracking system will be integrated so that each user can connect with others
+and stay up-to-date on their posts. We will also aim to offer a more personalized experience by
+displaying content tailored to each user's interests and preferences,
+thus improving interaction and engagement on the platform.
 
-Para evitar que el proyecto se vuelva complejo o difícil de mantener en sus primeras etapas, 
-la primera versión estará enfocada únicamente en las funcionalidades esenciales. 
-El objetivo es desarrollar una base sólida, funcional y fácil de escalar en futuras actualizaciones.
+- Initial Scope (MVP) 🥇
 
-La primer version incluirá: 
+To prevent the project from becoming complex or difficult to maintain in its early stages,
+the first version will focus solely on essential functionalities.
 
-• Registro e inicio de sesión:
-Los usuarios podrán crear una cuenta e ingresar a la plataforma de manera segura mediante autenticación básica.
-Esto permitirá identificar a cada usuario y mantener su información personalizada.
+The goal is to develop a solid, functional, and easily scalable foundation for future updates.
 
-• Perfil de usuario:
-Cada usuario contará con un perfil donde podrá visualizar y gestionar su información básica dentro de la aplicación, 
-brindando una experiencia más personalizada.
+The first version will include:
 
-• Publicación de contenido (imagen + texto mínimo):
-Los usuarios tendrán la posibilidad de crear publicaciones que incluyan una imagen acompañada de una breve descripción o texto. 
-Esta función será el núcleo principal de interacción dentro de la plataforma.
+• Registration and login:
+Users will be able to create an account and securely access the platform using basic authentication.
+
+This will allow for the identification of each user and the maintenance of their personalized information.
+
+• User profile:
+Each user will have a profile where they can view and manage their basic information within the application,
+
+providing a more personalized experience.
+
+• Content posting (image + minimal text):
+Users will be able to create posts that include an image accompanied by a brief description or text.
+
+This feature will be the core of interaction within the platform.
 
 • Likes:
-Se implementará un sistema de “me gusta” para que los usuarios puedan interactuar con las publicaciones de otros,
-permitiendo medir de forma sencilla la aceptación o interés del contenido compartido.
+A "like" system will be implemented so that users can interact with other users' posts,
 
-Con estas funciones se busca mantener el proyecto organizado, funcional y enfocado en lo realmente necesario para una primera versión estable.
+making it easy to measure the acceptance or interest in the shared content.
 
+These features aim to keep the project organized, functional, and focused on what is truly necessary for a stable first version.
 
- No incluye (por ahora):
+It does not include (for now):
 
-Mensajería privada
-Algoritmos complejos de recomendación
-Streaming en vivo
-Notificaciones en tiempo real
+Private messaging
+Complex recommendation algorithms
+Live streaming
+Real-time notifications
 
-- Arquitectura propuesta 👨‍💻
+- Proposed architecture 👨‍💻
 
-Frontend: Página web (HTML)
-Backend: API (Node.js recomendado)
-Base de datos: MongoDB (NoSQL)
+Frontend: Website (HTML)
+Backend: API (Node.js recommended)
+Database: MongoDB (NoSQL)
