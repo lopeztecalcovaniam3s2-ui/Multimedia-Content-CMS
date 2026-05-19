@@ -12,12 +12,30 @@ mejorando así la interacción y permanencia dentro de la plataforma.
 
 - Alcance inicial (MVP) 🥇
 
-Vamos a evitar que el proyecto se vuelva inmanejable. Primer versión:
- Incluye:
-Registro e inicio de sesión
-Perfil de usuario
-Publicación de contenido (imagen + texto mínimo)
-Likes
+Para evitar que el proyecto se vuelva complejo o difícil de mantener en sus primeras etapas, 
+la primera versión estará enfocada únicamente en las funcionalidades esenciales. 
+El objetivo es desarrollar una base sólida, funcional y fácil de escalar en futuras actualizaciones.
+
+La primer version incluirá: 
+
+• Registro e inicio de sesión:
+Los usuarios podrán crear una cuenta e ingresar a la plataforma de manera segura mediante autenticación básica.
+Esto permitirá identificar a cada usuario y mantener su información personalizada.
+
+• Perfil de usuario:
+Cada usuario contará con un perfil donde podrá visualizar y gestionar su información básica dentro de la aplicación, 
+brindando una experiencia más personalizada.
+
+• Publicación de contenido (imagen + texto mínimo):
+Los usuarios tendrán la posibilidad de crear publicaciones que incluyan una imagen acompañada de una breve descripción o texto. 
+Esta función será el núcleo principal de interacción dentro de la plataforma.
+
+• Likes:
+Se implementará un sistema de “me gusta” para que los usuarios puedan interactuar con las publicaciones de otros,
+permitiendo medir de forma sencilla la aceptación o interés del contenido compartido.
+
+Con estas funciones se busca mantener el proyecto organizado, funcional y enfocado en lo realmente necesario para una primera versión estable.
+
 
  No incluye (por ahora):
 
