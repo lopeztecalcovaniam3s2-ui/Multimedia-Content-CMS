@@ -56,14 +56,15 @@ When the user tries to like a post, the site returns their request with a login 
 
 And when they try to create a post, their request will be rejected with a login form.
 
-Evaluation Criteria Story 1:
+➊ Evaluation Criteria Story 1: ➊
 * The system should have simple options that do not require any validation.
 * The system must validate the user's identity on the page to interact with some special functions.
 * The system should present an alternative in case of a lack of identity on the site.
 
-Story 2: Login/Creation of Sessions
+➋ Story 2: Login/Creation of Sessions ➋
 
-As a user, I want to become part of the site. The user locates the login button and, upon noticing it, enters the corresponding data requested in the form. When a user is new, they will have no data to enter, so they must access a second form to create their account.
+As a user, I want to become part of the site. The user locates the login button and, upon noticing it, 
+enters the corresponding data requested in the form. When a user is new, they will have no data to enter, so they must access a second form to create their account.
 
 The system should perform data checks to verify that the following data is repeated:
 * Password
@@ -75,7 +76,7 @@ Evaluation Criteria - History 2
 * An account creation form
 * Password encryption
 
-History 2: Creating posts
+➋ History 2: Creating posts ➋
 As a user, I want to be able to easily create posts. The user is presented with a form to create their post, and they can upload images or GIFs using links.
 
 When the user is not logged in, the system should reject the request and start the corresponding form.
