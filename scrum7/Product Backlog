@@ -1,10 +1,8 @@
 - Objetivo del proyecto 🎯
 
-Crear una plataforma tipo red social multimedia donde los usuarios puedan:
-Publicar contenido (imágenes, videos, texto)
-Interactuar (likes, comentarios)
-Seguir a otros usuarios
-Consumir contenido personalizado
+Desarrollar una plataforma digital tipo red social multimedia que permita a los usuarios crear y compartir contenido en diferentes formatos, como imágenes, videos y publicaciones de texto. La plataforma deberá incluir funciones de interacción social, tales como reacciones, likes y comentarios, con el fin de fomentar la participación y la comunicación entre los usuarios.
+
+Además, se integrará un sistema de seguimiento entre perfiles para que cada usuario pueda conectar con otros y mantenerse al tanto de sus publicaciones. También se buscará ofrecer una experiencia más personalizada mediante la visualización de contenido adaptado a los intereses y preferencias de cada usuario, mejorando así la interacción y permanencia dentro de la plataforma.
 
 - Alcance inicial (MVP) 🥇
 
