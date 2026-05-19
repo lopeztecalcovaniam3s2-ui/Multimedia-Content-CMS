@@ -13,9 +13,11 @@ Para saber la organización del equipo se utiliza Github.com donde todos tienen 
 https://github.com/lopeztecalcovaniam3s2-ui/Multimedia-Content-CMS
 
 Para almacenar datos se utiliza eñ servicio de MongoDB, la url de conexion es la siguiente:
+mongodb://mongo:MklVEjlbuDaiEcWVTjkGVLjAfJppIpqD@caboose.proxy.rlwy.net:*****
 
 
 El servicio que conecta el backend con la base de datos es Raillway, aqui se encuentran alojados Los servicios de MongoDB y Github con su respectivo contenido.
+mongodb://mongo:MklVEjlbuDaiEcWVTjkGVLjAfJppIpqD@caboose.proxy.rlwy.net:*****
 
 Aqui contiene el frontend y lo hace publico.
 
