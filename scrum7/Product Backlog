@@ -10,7 +10,7 @@ and stay up-to-date on their posts. We will also aim to offer a more personalize
 displaying content tailored to each user's interests and preferences,
 thus improving interaction and engagement on the platform.
 
-- Initial Scope (MVP) 🥇
+- Epics 🥇
 
 To prevent the project from becoming complex or difficult to maintain in its early stages,
 the first version will focus solely on essential functionalities.
@@ -47,6 +47,42 @@ Private messaging
 Complex recommendation algorithms
 Live streaming
 Real-time notifications
+
+User Story
+
+As a new user, I want to use all the site's features. The user will be able to freely explore posts without obstacles, perform searches, and check profiles.
+
+When the user tries to like a post, the site returns their request with a login form or, failing that, an account creation form.
+
+And when they try to create a post, their request will be rejected with a login form.
+
+Evaluation Criteria Story 1:
+* The system should have simple options that do not require any validation.
+* The system must validate the user's identity on the page to interact with some special functions.
+* The system should present an alternative in case of a lack of identity on the site.
+
+Story 2: Login/Creation of Sessions
+
+As a user, I want to become part of the site. The user locates the login button and, upon noticing it, enters the corresponding data requested in the form. When a user is new, they will have no data to enter, so they must access a second form to create their account.
+
+The system should perform data checks to verify that the following data is repeated:
+* Password
+
+If it is repeated, the system should not allow the creation of any account.
+
+Evaluation Criteria - History 2
+
+* An account creation form
+* Password encryption
+
+History 2: Creating posts
+As a user, I want to be able to easily create posts. The user is presented with a form to create their post, and they can upload images or GIFs using links.
+
+When the user is not logged in, the system should reject the request and start the corresponding form.
+
+Evaluation Criteria - History 3:
+* Post creation form
+* Profile validation
 
 - Proposed architecture 👨‍💻
 
