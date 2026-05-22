@@ -61,6 +61,7 @@ And when they try to create a post, their request will be rejected with a login 
 * The system must validate the user's identity on the page to interact with some special functions.
 * The system should present an alternative in case of a lack of identity on the site.
 
+```gherkin
   Feature: Welcome to the Site
   As a new user
   I want to explore the site's content freely
@@ -82,6 +83,8 @@ And when they try to create a post, their request will be rejected with a login 
     When I try to create a post
     Then my request should be rejected
     And I should be shown the login form
+
+```
 
 ➋ Story 2: Login/Creation of Sessions ➋
 
@@ -107,6 +110,8 @@ Evaluation Criteria - History 3:
 * Post creation form
 * Profile validation
 
+```gherkin
+
 Feature: Login and Account Creation
   As a user
   I want to access the site with an account
@@ -129,6 +134,8 @@ Feature: Login and Account Creation
     Given I am a new user
     When I enter a password that already exists in the system
     Then the system should not allow account creation
+
+```
 - Proposed architecture 👨‍💻
 
 Frontend: Website (HTML)
