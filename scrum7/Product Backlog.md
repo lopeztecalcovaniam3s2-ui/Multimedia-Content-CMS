@@ -49,6 +49,8 @@ Live streaming
 Real-time notifications
 
 - User Story 📄
+
+  
 ➊ Story 1: Welcome to the Site➋
 As a new user, I want to use all the site's features. The user will be able to freely explore posts without obstacles, perform searches, and check profiles.
 
