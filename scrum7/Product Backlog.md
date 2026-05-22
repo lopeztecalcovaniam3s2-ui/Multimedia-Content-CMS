@@ -61,6 +61,28 @@ And when they try to create a post, their request will be rejected with a login 
 * The system must validate the user's identity on the page to interact with some special functions.
 * The system should present an alternative in case of a lack of identity on the site.
 
+  Feature: Welcome to the Site
+  As a new user
+  I want to explore the site's content freely
+  So that I can view posts, perform searches, and check profiles
+
+  Scenario: Explore posts without logging in
+    Given I am a new user on the site
+    When I browse posts
+    Then I should be able to view all posts without obstacles
+
+  Scenario: Like a post without logging in
+    Given I am a new user
+    When I try to like a post
+    Then I should be prompted with a login form
+    And if I have no account, I should see an account creation form
+
+  Scenario: Attempt to create a post without logging in
+    Given I am a new user
+    When I try to create a post
+    Then my request should be rejected
+    And I should be shown the login form
+
 ➋ Story 2: Login/Creation of Sessions ➋
 
 As a user, I want to become part of the site. The user locates the login button and, upon noticing it, 
@@ -85,6 +107,28 @@ Evaluation Criteria - History 3:
 * Post creation form
 * Profile validation
 
+Feature: Login and Account Creation
+  As a user
+  I want to access the site with an account
+  So that I can interact with special functions
+
+  Scenario: Login with existing account
+    Given I am on the login page
+    When I enter valid credentials
+    Then I should be logged into my account
+
+  Scenario: Create a new account
+    Given I am a new user
+    When I navigate to the account creation form
+    And I enter my details
+    And my password is not repeated
+    Then my account should be created successfully
+    And my password should be encrypted
+
+  Scenario: Attempt to create an account with a repeated password
+    Given I am a new user
+    When I enter a password that already exists in the system
+    Then the system should not allow account creation
 - Proposed architecture 👨‍💻
 
 Frontend: Website (HTML)
