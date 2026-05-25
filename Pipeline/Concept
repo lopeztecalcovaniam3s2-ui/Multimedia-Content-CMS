@@ -1,0 +1,13 @@
+El pipeline de agregación en MongoDB es un mecanismo de procesamiento de datos que permite ejecutar 
+múltiples etapas consecutivas sobre los documentos de una colección. Su funcionamiento puede compararse con 
+una cinta transportadora industrial, donde cada estación realiza una operación específica antes de pasar 
+el resultado a la siguiente.
+
+Tomando como referencia el diagrama presentado (USERS, POSTS y LIKES), 
+el pipeline permite transformar y analizar la información de forma progresiva.
+
+Funcionamiento del pipeline de agregación
+
+En este modelo, los documentos de la colección POSTS ingresan al pipeline y atraviesan distintas etapas de procesamiento:
+
+POSTS → Filtrar → Relacionar → Transformar → Ordenar → Resultado
