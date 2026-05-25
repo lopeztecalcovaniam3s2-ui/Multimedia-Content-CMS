@@ -6,7 +6,7 @@ el resultado a la siguiente.
 Tomando como referencia el diagrama presentado (USERS, POSTS y LIKES), 
 el pipeline permite transformar y analizar la información de forma progresiva.
 
-Funcionamiento del pipeline de agregación
+⚙️ Funcionamiento del pipeline de agregación
 
 En este modelo, los documentos de la colección POSTS ingresan al pipeline y atraviesan distintas
 etapas de procesamiento:
