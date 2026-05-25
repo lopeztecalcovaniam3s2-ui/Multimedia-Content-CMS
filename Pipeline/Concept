@@ -48,3 +48,66 @@ El pipeline podría construirse de la siguiente manera:
     }
   }
 ])
+
+Explicación de cada etapa
+1. $match — Filtrado
+  {
+  $match: {
+    like_count: { $gte: 10 }
+  }
+}
+
+Esta etapa selecciona únicamente las publicaciones con 10 o más likes.
+
+Equivale a una estación de clasificación que deja continuar solo los elementos que cumplen una condición específica.
+
+2. $lookup — Relación entre colecciones
+  {
+  $lookup: {
+    from: "users",
+    localField: "author_id",
+    foreignField: "_id",
+    as: "author"
+  }
+}
+
+Relaciona los documentos de POSTS con la colección USERS utilizando el campo author_id.
+
+Su función es similar a unir información adicional al producto durante el proceso de ensamblaje.
+
+3. $project — Transformación de datos
+  {
+  $project: {
+    content: 1,
+    like_count: 1,
+    "author.username": 1
+  }
+}
+
+Define qué campos aparecerán en el resultado final.
+
+Esta etapa elimina información innecesaria y conserva únicamente los datos relevantes.
+
+4. $sort — Ordenamiento
+  {
+  $sort: {
+    like_count: -1
+  }
+}
+
+Ordena las publicaciones de mayor a menor cantidad de likes.
+
+Diferencia entre aggregate() y find()
+
+La función find() realiza únicamente operaciones de búsqueda y filtrado simples sobre una colección.
+
+Ejemplo:
+  db.posts.find({
+  like_count: { $gte: 10 }
+})
+
+Esta consulta:
+
+busca documentos,
+aplica filtros básicos,
+y devuelve los resultados sin procesamiento avanzado.
