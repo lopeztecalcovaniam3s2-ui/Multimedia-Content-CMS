@@ -20,7 +20,7 @@ Supóngase que se requiere obtener:
 
 “Las publicaciones con más de 10 likes, junto con el nombre del autor, ordenadas por popularidad.”
 
-El pipeline podría construirse de la siguiente manera:
+👨‍💻 El pipeline podría construirse de la siguiente manera:
   db.posts.aggregate([
   {
     $match: {
@@ -49,7 +49,7 @@ El pipeline podría construirse de la siguiente manera:
   }
 ])
 
-Explicación de cada etapa
+👨‍🏫Explicación de cada etapa
 1. $match — Filtrado
   {
   $match: {
@@ -97,7 +97,7 @@ Esta etapa elimina información innecesaria y conserva únicamente los datos rel
 
 Ordena las publicaciones de mayor a menor cantidad de likes.
 
-Diferencia entre aggregate() y find()
+📌Diferencia entre aggregate() y find()
 
 La función find() realiza únicamente operaciones de búsqueda y filtrado simples sobre una colección.
 
