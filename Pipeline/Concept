@@ -10,4 +10,41 @@ Funcionamiento del pipeline de agregación
 
 En este modelo, los documentos de la colección POSTS ingresan al pipeline y atraviesan distintas
 etapas de procesamiento:
- POSTS → Filtrar → Relacionar → Transformar → Ordenar → Resultad
+  POSTS → Filtrar → Relacionar → Transformar → Ordenar → Resultad
+
+Cada etapa recibe el resultado de la anterior y aplica una operación determinada.
+
+Ejemplo aplicado al diagrama
+
+Supóngase que se requiere obtener:
+
+“Las publicaciones con más de 10 likes, junto con el nombre del autor, ordenadas por popularidad.”
+
+El pipeline podría construirse de la siguiente manera:
+  db.posts.aggregate([
+  {
+    $match: {
+      like_count: { $gte: 10 }
+    }
+  },
+  {
+    $lookup: {
+      from: "users",
+      localField: "author_id",
+      foreignField: "_id",
+      as: "author"
+    }
+  },
+  {
+    $project: {
+      content: 1,
+      like_count: 1,
+      "author.username": 1
+    }
+  },
+  {
+    $sort: {
+      like_count: -1
+    }
+  }
+])
