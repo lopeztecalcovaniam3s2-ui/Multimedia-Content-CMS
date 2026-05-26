@@ -1,0 +1,363 @@
+// ======================================================
+// AGG_02_REPORTS.MONGODB
+// REPORTING + LOOKUP + PROJECT + SORT + LIMIT
+// Basado en:
+// USERS
+// POSTS
+// LIKES
+// ======================================================
+
+
+
+// ======================================================
+// 1. FEED COMPLETO PARA UI
+// ======================================================
+
+db.posts.aggregate([
+
+  // JOIN POSTS -> USERS
+  {
+    $lookup: {
+      from: "users",
+      localField: "author_id",
+      foreignField: "_id",
+      as: "author"
+    }
+  },
+
+  // author[] -> author{}
+  {
+    $unwind: "$author"
+  },
+
+  // JOIN POSTS -> LIKES
+  {
+    $lookup: {
+      from: "likes",
+      localField: "_id",
+      foreignField: "post_id",
+      as: "likes"
+    }
+  },
+
+  // TRANSFORMACIÓN UI
+  {
+    $project: {
+
+      _id: 0,
+
+      post_id: "$_id",
+
+      content: 1,
+
+      media_url: 1,
+
+      tags: 1,
+
+      created_at: 1,
+
+      author: {
+        username: "$author.username",
+        avatar: "$author.avatar_url",
+        bio: "$author.bio"
+      },
+
+      totalLikes: {
+        $size: "$likes"
+      }
+    }
+  },
+
+  // ORDENAR POSTS MÁS NUEVOS
+  {
+    $sort: {
+      created_at: -1
+    }
+  },
+
+  // LIMITAR FEED
+  {
+    $limit: 20
+  }
+
+])
+
+
+
+// ======================================================
+// 2. TOP USUARIOS CON MÁS LIKES
+// ======================================================
+
+db.posts.aggregate([
+
+  // JOIN LIKES
+  {
+    $lookup: {
+      from: "likes",
+      localField: "_id",
+      foreignField: "post_id",
+      as: "likes"
+    }
+  },
+
+  // JOIN USERS
+  {
+    $lookup: {
+      from: "users",
+      localField: "author_id",
+      foreignField: "_id",
+      as: "author"
+    }
+  },
+
+  // author[] -> author{}
+  {
+    $unwind: "$author"
+  },
+
+  // AGRUPAR MÉTRICAS
+  {
+    $group: {
+
+      _id: "$author._id",
+
+      username: {
+        $first: "$author.username"
+      },
+
+      avatar: {
+        $first: "$author.avatar_url"
+      },
+
+      totalPosts: {
+        $sum: 1
+      },
+
+      totalLikes: {
+        $sum: {
+          $size: "$likes"
+        }
+      }
+    }
+  },
+
+  // FORMATO UI
+  {
+    $project: {
+
+      _id: 0,
+
+      username: 1,
+
+      avatar: 1,
+
+      totalPosts: 1,
+
+      totalLikes: 1
+    }
+  },
+
+  // ORDENAR RANKING
+  {
+    $sort: {
+      totalLikes: -1
+    }
+  },
+
+  // TOP 10
+  {
+    $limit: 10
+  }
+
+])
+
+
+
+// ======================================================
+// 3. POSTS CON MÁS LIKES
+// ======================================================
+
+db.posts.aggregate([
+
+  // JOIN USERS
+  {
+    $lookup: {
+      from: "users",
+      localField: "author_id",
+      foreignField: "_id",
+      as: "author"
+    }
+  },
+
+  {
+    $unwind: "$author"
+  },
+
+  // JOIN LIKES
+  {
+    $lookup: {
+      from: "likes",
+      localField: "_id",
+      foreignField: "post_id",
+      as: "likes"
+    }
+  },
+
+  // PROYECTAR
+  {
+    $project: {
+
+      _id: 0,
+
+      content: 1,
+
+      created_at: 1,
+
+      username: "$author.username",
+
+      totalLikes: {
+        $size: "$likes"
+      }
+    }
+  },
+
+  // ORDENAR
+  {
+    $sort: {
+      totalLikes: -1
+    }
+  },
+
+  // LIMIT
+  {
+    $limit: 5
+  }
+
+])
+
+
+
+// ======================================================
+// 4. USUARIOS Y SUS POSTS
+// EQUIVALENTE SQL LEFT JOIN
+// ======================================================
+
+db.users.aggregate([
+
+  {
+    $lookup: {
+      from: "posts",
+      localField: "_id",
+      foreignField: "author_id",
+      as: "posts"
+    }
+  },
+
+  {
+    $project: {
+
+      _id: 0,
+
+      username: 1,
+
+      email: 1,
+
+      totalPosts: {
+        $size: "$posts"
+      },
+
+      posts: {
+        content: 1,
+        created_at: 1
+      }
+    }
+  }
+
+])
+
+
+
+// ======================================================
+// 5. POSTS + TOTAL DE LIKES + INFO AUTOR
+// ======================================================
+
+db.posts.aggregate([
+
+  // USERS
+  {
+    $lookup: {
+      from: "users",
+      localField: "author_id",
+      foreignField: "_id",
+      as: "author"
+    }
+  },
+
+  {
+    $unwind: "$author"
+  },
+
+  // LIKES
+  {
+    $lookup: {
+      from: "likes",
+      localField: "_id",
+      foreignField: "post_id",
+      as: "likes"
+    }
+  },
+
+  // UI
+  {
+    $project: {
+
+      _id: 0,
+
+      content: 1,
+
+      username: "$author.username",
+
+      avatar: "$author.avatar_url",
+
+      likes_count: {
+        $size: "$likes"
+      },
+
+      created_at: 1
+    }
+  },
+
+  // ORDER
+  {
+    $sort: {
+      likes_count: -1
+    }
+  }
+
+])
+
+
+
+// ======================================================
+// ÍNDICES IMPORTANTES
+// ======================================================
+
+db.posts.createIndex({
+  author_id: 1
+})
+
+db.likes.createIndex({
+  post_id: 1
+})
+
+db.likes.createIndex({
+  user_id: 1
+})
+
+db.users.createIndex({
+  username: 1
+})
+
+db.users.createIndex({
+  email: 1
+})
