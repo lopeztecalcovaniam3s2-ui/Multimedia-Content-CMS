@@ -1,0 +1,113 @@
+El pipeline de agregación en MongoDB es un mecanismo de procesamiento de datos que permite ejecutar 
+múltiples etapas consecutivas sobre los documentos de una colección. Su funcionamiento puede compararse con 
+una cinta transportadora industrial, donde cada estación realiza una operación específica antes de pasar 
+el resultado a la siguiente.
+
+Tomando como referencia el diagrama presentado (USERS, POSTS y LIKES), 
+el pipeline permite transformar y analizar la información de forma progresiva.
+
+⚙️ Funcionamiento del pipeline de agregación
+
+En este modelo, los documentos de la colección POSTS ingresan al pipeline y atraviesan distintas
+etapas de procesamiento:
+  POSTS → Filtrar → Relacionar → Transformar → Ordenar → Resultad
+
+Cada etapa recibe el resultado de la anterior y aplica una operación determinada.
+
+Ejemplo aplicado al diagrama
+
+Supóngase que se requiere obtener:
+
+“Las publicaciones con más de 10 likes, junto con el nombre del autor, ordenadas por popularidad.”
+
+👨‍💻 El pipeline podría construirse de la siguiente manera:
+  db.posts.aggregate([
+  {
+    $match: {
+      like_count: { $gte: 10 }
+    }
+  },
+  {
+    $lookup: {
+      from: "users",
+      localField: "author_id",
+      foreignField: "_id",
+      as: "author"
+    }
+  },
+  {
+    $project: {
+      content: 1,
+      like_count: 1,
+      "author.username": 1
+    }
+  },
+  {
+    $sort: {
+      like_count: -1
+    }
+  }
+])
+
+👨‍🏫Explicación de cada etapa
+1. $match — Filtrado
+  {
+  $match: {
+    like_count: { $gte: 10 }
+  }
+}
+
+Esta etapa selecciona únicamente las publicaciones con 10 o más likes.
+
+Equivale a una estación de clasificación que deja continuar solo los elementos que cumplen una condición específica.
+
+2. $lookup — Relación entre colecciones
+  {
+  $lookup: {
+    from: "users",
+    localField: "author_id",
+    foreignField: "_id",
+    as: "author"
+  }
+}
+
+Relaciona los documentos de POSTS con la colección USERS utilizando el campo author_id.
+
+Su función es similar a unir información adicional al producto durante el proceso de ensamblaje.
+
+3. $project — Transformación de datos
+  {
+  $project: {
+    content: 1,
+    like_count: 1,
+    "author.username": 1
+  }
+}
+
+Define qué campos aparecerán en el resultado final.
+
+Esta etapa elimina información innecesaria y conserva únicamente los datos relevantes.
+
+4. $sort — Ordenamiento
+  {
+  $sort: {
+    like_count: -1
+  }
+}
+
+Ordena las publicaciones de mayor a menor cantidad de likes.
+
+📌Diferencia entre aggregate() y find()
+
+La función find() realiza únicamente operaciones de búsqueda y filtrado simples sobre una colección.
+
+Ejemplo:
+  db.posts.find({
+  like_count: { $gte: 10 }
+})
+
+Esta consulta:
+
+busca documentos,
+aplica filtros básicos,
+y devuelve los resultados sin procesamiento avanzado.
