@@ -198,7 +198,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 
   Scenario: Post not found
     Given the user accesses post-detalle.html with an invalid id
-    WHen the post is visible
+    When the post is visible
     Then the system shows "Post not found"
 ```
 
