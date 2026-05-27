@@ -29,7 +29,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can access the social network features
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -64,7 +64,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can access my account and private features
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -99,7 +99,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can protect my account on shared devices
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -126,7 +126,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can share content with other users
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -162,7 +162,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can explore available content
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -186,7 +186,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **I want** to view a post in full size  
 **So that** I can read the full content and see the image without cropping
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -213,7 +213,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can express that I enjoyed the content
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -247,7 +247,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can review my posts and account data
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -272,7 +272,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can explore their content
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 
 
@@ -294,7 +294,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 **So that** I can find specific content
 
 
-**Gherkin:**
+**Acceptance criteria:**
 ```gherkin
 Feature: Post search
 
