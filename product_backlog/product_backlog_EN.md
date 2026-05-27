@@ -17,7 +17,6 @@ Develop a fully functional web social network deployed in the cloud where users 
 | E2 | Post Management | Create, view and explore posts |
 | E3 | Social Interactions | Likes and profile viewing |
 | E4 | Search and Navigation | Search posts by text and tags |
-| E5 | Infrastructure and Deployment | Backend, database and frontend in the cloud |
 
 ---
 
@@ -29,12 +28,6 @@ Develop a fully functional web social network deployed in the cloud where users 
 **I want** to create an account with username, email and password  
 **So that** I can access the social network features
 
-**Acceptance Criteria:**
-- The system validates that all fields are filled
-- The system validates that passwords match
-- Email and username must be unique in the database
-- Password is stored encrypted with bcryptjs
-- Upon successful registration the user receives a JWT token and is redirected to the home page
 
 **Gherkin:**
 ```gherkin
@@ -70,12 +63,6 @@ Feature: User registration
 **I want** to log in with my email and password  
 **So that** I can access my account and private features
 
-**Acceptance Criteria:**
-- The system validates that fields are not empty
-- The system compares the entered password with the encrypted one in the database
-- Upon successful login the user receives a JWT token
-- The token and user data are stored in localStorage
-- Incorrect credentials show an error message without revealing which field failed
 
 **Gherkin:**
 ```gherkin
@@ -111,10 +98,6 @@ Feature: Login
 **I want** to log out  
 **So that** I can protect my account on shared devices
 
-**Acceptance Criteria:**
-- Logout removes the token and user data from localStorage
-- The user is redirected to the login page
-- Private routes are inaccessible after logout
 
 **Gherkin:**
 ```gherkin
@@ -142,13 +125,6 @@ Feature: Logout
 **I want** to create a post with text, tags and an optional image  
 **So that** I can share content with other users
 
-**Acceptance Criteria:**
-- The content field is required
-- Tags are entered in #tag format and converted to an array
-- The image/video link is optional
-- The post automatically stores the author's username and avatar as a snapshot
-- After successful publishing redirects to home after 1.5 seconds
-- If no active session redirects to login
 
 **Gherkin:**
 ```gherkin
@@ -185,13 +161,6 @@ Feature: Create post
 **I want** to see all posts on the social network  
 **So that** I can explore available content
 
-**Acceptance Criteria:**
-- Posts load automatically when entering index.html
-- Displayed from most recent to oldest
-- Each post shows content, author, likes and tags if any
-- If the post has an image it is displayed; if it has tags they are shown as badges
-- If there are no posts an informative message is shown
-- The page is responsive — 3 columns on desktop, 2 on tablet, 1 on mobile
 
 **Gherkin:**
 ```gherkin
@@ -216,13 +185,6 @@ Feature: Post gallery
 **As** a user  
 **I want** to view a post in full size  
 **So that** I can read the full content and see the image without cropping
-
-**Acceptance Criteria:**
-- Clicking a post redirects to post-detalle.html with the id in the URL
-- Displays full image without cropping
-- Shows author with avatar, publication date and tags
-- Includes a functional like button
-- Includes a "View profile" button for the author
 
 **Gherkin:**
 ```gherkin
@@ -249,12 +211,6 @@ Feature: Post detail
 **I want** to like a post  
 **So that** I can express that I enjoyed the content
 
-**Acceptance Criteria:**
-- Only authenticated users can like posts
-- Clicking like increments the counter by 1 visually
-- Clicking again removes the like and decrements the counter by 1
-- If no active session redirects to login when trying to like
-- The backend records the like in the likes collection and updates likes_count in the post
 
 **Gherkin:**
 ```gherkin
@@ -289,12 +245,6 @@ Feature: Like system
 **I want** to view my profile  
 **So that** I can review my posts and account data
 
-**Acceptance Criteria:**
-- Shows the logged-in user's username and email
-- Shows only the logged-in user's posts
-- Each post shows its like counter
-- Clicking a post redirects to its detail
-- If no active session redirects to login
 
 **Gherkin:**
 ```gherkin
@@ -320,12 +270,6 @@ Feature: Own profile
 **I want** to view another user's profile  
 **So that** I can explore their content
 
-**Acceptance Criteria:**
-- Accessible from the "View profile" button in post-detalle.html
-- Shows the user's username and avatar with their initials
-- Shows all posts by that user
-- Each post shows its like counter
-- Clicking a post redirects to its detail
 
 **Gherkin:**
 ```gherkin
@@ -348,12 +292,6 @@ Feature: Another user's profile
 **I want** to search posts by text  
 **So that** I can find specific content
 
-**Acceptance Criteria:**
-- Search filters by post content, author name and tags
-- Clicking "Search" redirects to posts.html with the text as a URL parameter
-- Also works by pressing Enter
-- If no results an informative message is shown
-- Search is case-insensitive
 
 **Gherkin:**
 ```gherkin
@@ -373,53 +311,3 @@ Feature: Post search
 
 ---
 
-## E5 — Infrastructure and Deployment
-
-### US-11 Functional REST API
-
-**As** a developer  
-**I want** the backend to expose REST endpoints  
-**So that** the frontend can consume the data
-
-**Acceptance Criteria:**
-- `POST /api/auth/register` — registers user and returns token
-- `POST /api/auth/login` — authenticates user and returns token
-- `GET /api/posts` — returns all posts
-- `POST /api/posts` — creates post (requires token)
-- `POST /api/posts/:id/like` — likes a post (requires token)
-- `DELETE /api/posts/:id/like` — removes like (requires token)
-- Private routes return 401 without a valid token
-
----
-
-### US-12 Production Deployment
-
-**As** an end user  
-**I want** to access the social network from any device  
-**So that** I don't depend on the developer having their computer on
-
-**Acceptance Criteria:**
-- Frontend deployed on Netlify with a public URL
-- Backend deployed on Railway with a public URL
-- MongoDB database hosted on Railway
-- The system runs 24/7 without manual intervention
-
----
-
-## Backlog Summary
-
-| ID | User Story | Epic | Priority | Status |
-|----|-----------|------|----------|--------|
-| US-01 | Account Registration | E1 | High | ✅ Done |
-| US-02 | Login | E1 | High | ✅ Done |
-| US-03 | Logout | E1 | High | ✅ Done |
-| US-04 | Create Post | E2 | High | ✅ Done |
-| US-05 | View Gallery | E2 | High | ✅ Done |
-| US-06 | View Post Detail | E2 | Medium | ✅ Done |
-| US-07 | Like a Post | E3 | Medium | ✅ Done |
-| US-08 | View Own Profile | E3 | Medium | ✅ Done |
-| US-09 | View Another User's Profile | E3 | Medium | ✅ Done |
-| US-10 | Search Posts | E4 | Medium | ✅ Done |
-| US-11 | Functional REST API | E5 | High | ✅ Done |
-| US-12 | Production Deployment | E5 | High | ✅ Done |
-EOF
