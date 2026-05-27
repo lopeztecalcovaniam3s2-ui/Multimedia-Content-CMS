@@ -31,7 +31,7 @@ Develop a fully functional web social network deployed in the cloud where users 
 
 **Gherkin:**
 ```gherkin
-Feature: User registration
+
 
   Scenario: Successful registration
     Given the user is on the registration page
@@ -66,7 +66,7 @@ Feature: User registration
 
 **Gherkin:**
 ```gherkin
-Feature: Login
+
 
   Scenario: Successful login
     Given the user is on the login page
@@ -101,7 +101,7 @@ Feature: Login
 
 **Gherkin:**
 ```gherkin
-Feature: Logout
+
 
   Scenario: Successful logout
     Given the user has an active session
@@ -128,7 +128,7 @@ Feature: Logout
 
 **Gherkin:**
 ```gherkin
-Feature: Create post
+
 
   Scenario: Successful post with text and tags
     Given the user has an active session
@@ -164,7 +164,7 @@ Feature: Create post
 
 **Gherkin:**
 ```gherkin
-Feature: Post gallery
+
 
   Scenario: Successfully load posts
     Given posts exist in the database
@@ -188,7 +188,7 @@ Feature: Post gallery
 
 **Gherkin:**
 ```gherkin
-Feature: Post detail
+
 
   Scenario: View post in detail
     Given the user is on index.html
@@ -198,6 +198,7 @@ Feature: Post detail
 
   Scenario: Post not found
     Given the user accesses post-detalle.html with an invalid id
+    WHen the post is visible
     Then the system shows "Post not found"
 ```
 
@@ -214,7 +215,7 @@ Feature: Post detail
 
 **Gherkin:**
 ```gherkin
-Feature: Like system
+
 
   Scenario: Successfully like a post
     Given the user has an active session
@@ -248,7 +249,7 @@ Feature: Like system
 
 **Gherkin:**
 ```gherkin
-Feature: Own profile
+
 
   Scenario: View profile with posts
     Given the user has an active session and has published posts
@@ -273,7 +274,7 @@ Feature: Own profile
 
 **Gherkin:**
 ```gherkin
-Feature: Another user's profile
+
 
   Scenario: View profile from post detail
     Given the user is on post-detalle.html
@@ -306,6 +307,7 @@ Feature: Post search
 
   Scenario: Search with no results
     Given the user searches for "xyzabc123"
+    When the user click on search
     Then the system shows "No posts found for xyzabc123"
 ```
 
