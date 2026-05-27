@@ -53,6 +53,23 @@ Develop a fully functional web social network deployed in the cloud where users 
     Given a user with email "juan@test.com" already exists
     When another user tries to register with the same email
     Then the system shows "Username or email already registered"
+
+  Scenario: Username already registred
+    Given a user with username "juan" already exists
+    When another user has that username
+    Then the system shows "Username or email already registered"
+
+  Scenario: Lag on Network
+    Given the user is on the registration page
+    When they enter his data whith network lag
+    And click on "Create account"
+    Then The system continue the process
+
+  Scenario: Invalid email
+    Given the user enter a email
+    When the email has a invalid format
+    Then the system shows "Invalid Username or email"
+ 
 ```
 
 ---
