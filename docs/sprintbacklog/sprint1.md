@@ -1,4 +1,4 @@
-# Sprint Backlog — Social Network
+**# Sprint Backlog — Social Network
 
 ---
 
@@ -83,3 +83,4 @@ SP1-06 | Welcome message on index page | If the user is logged in, display "Welc
 1. In `index.html`, check if there's a user in localStorage and display the message. Greetings
 
 ---
+**
