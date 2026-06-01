@@ -1,4 +1,4 @@
-**# Sprint Backlog — Social Network
+# Sprint Backlog — Social Network
 
 ---
 
