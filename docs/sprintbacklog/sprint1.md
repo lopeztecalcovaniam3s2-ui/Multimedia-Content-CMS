@@ -18,6 +18,8 @@ The base product is complete and deployed in production. The following sprints a
 
 > Enable users to interact with posts more precisely, seeing at all times if they have liked them, with more intuitive navigation between profiles and posts.
 
+### Sprint Backlog
+
 | ID | Story | Description | Priority | Estimate |
 |----|-------|-------------|----------|----------|
 | SP1-01 | Smart Likes | When posts load, visually mark which ones have already been liked by the logged-in user | High | 3 pts |
