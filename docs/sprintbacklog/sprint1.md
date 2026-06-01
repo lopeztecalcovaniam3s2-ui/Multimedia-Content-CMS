@@ -28,15 +28,15 @@ The base product is complete and deployed in production. The following sprints a
 
 | SP1-01 | Smart Likes | When posts load, visually mark which ones have already been liked by the logged-in user | High | 3 pts |
 
-|SP1-02 | Endpoint for likes per user | Create `GET /api/posts/my-likes` that returns the post_ids that the user has already liked | High | 2 pts |
+|SP1-02 | Endpoint for likes per user | Create `GET /api/posts/my-likes` that returns the post_ids that the user has already liked |   High | 2 pts |
 
-|SP1-03 | Prevent duplicate likes | Validate on the frontend and backend that a user cannot like the same post twice | High | 3 pts |
+| SP1-03 | Prevent duplicate likes | Validate on the frontend and backend that a user cannot like the same post twice | High | 3 pts |
 
-|SP1-04 | Post counter on profile | Show how many posts the user has on their profile | Medium | 1 pt |
+| SP1-04 | Post counter on profile | Show how many posts the user has on their profile | Medium | 1 pt |
 
-|SP1-05 | Back button on post details | Improve navigation with a button that returns to the previous page | Low | 1 pt |
+| SP1-05 | Back button on post details | Improve navigation with a button that returns to the previous page | Low | 1 pt |
 
-|SP1-06 | Welcome message on index page | If the user is logged in, display "Welcome, @username" in the header | Low | 1 pt |
+| SP1-06 | Welcome message on index page | If the user is logged in, display "Welcome, @username" in the header | Low | 1 pt  |
 
 **Total:** 11 points
 
