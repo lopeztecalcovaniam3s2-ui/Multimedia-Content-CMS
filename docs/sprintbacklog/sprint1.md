@@ -86,8 +86,8 @@ Feature: Smart likes on page load
 ### Definition of Done
 
 * [ ] Functionality manually tested in Netlify
-- No errors in the browser console
-- Responsive on mobile and desktop
-- Changes uploaded to GitHub and redeployed in Railway/Netlify
+* [ ] No errors in the browser console
+* [ ] Responsive on mobile and desktop
+* [ ] Changes uploaded to GitHub and redeployed in Railway/Netlify
 
 ---
