@@ -80,7 +80,7 @@ Feature: Smart likes on page load
 **SP1-06 — Welcome Message:**
 1. In `index.html`, check if there's a user in localStorage and display the message. Greetings
 ---
----
+
 
 ## Impediments
  
