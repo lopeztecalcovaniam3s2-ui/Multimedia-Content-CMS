@@ -13,7 +13,7 @@ The base product is complete and deployed in production. The following sprints a
 **Objective:** Improve user interaction with the platform — smart likes, smoother navigation, and real-time visual feedback.
 
 ---
-###Sprint Parameter & Capacity Plan
+## Sprint Parameter & Capacity Plan
 * Sprint Duration: 2 weeks
 * Daily Commitment: 2 Hours (Monday - Friday)
 * Total Sprint Capacity: 40 Hours
@@ -21,7 +21,7 @@ The base product is complete and deployed in production. The following sprints a
 * Buffer: 20 Hours
 
 ---
-###Sprint Goal
+## Sprint Goal
 
 > Enable users to interact with posts more precisely, seeing at all times if they have liked them, with more intuitive navigation between profiles and posts.
 
