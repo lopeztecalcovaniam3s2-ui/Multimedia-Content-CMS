@@ -80,9 +80,28 @@ Feature: Smart likes on page load
 **SP1-06 — Welcome Message:**
 1. In `index.html`, check if there's a user in localStorage and display the message. Greetings
 ---
-
-
-
+---
+### Impediments & Dependences
+## Impediments
+ 
+| ID | Description | Impact | Owner |
+|----|-------------|--------|-------|
+| IMP-01 | Railway free tier has insufficient disk space to create unique indexes in MongoDB | Prevents SP1-03 from being fully enforced at the database level | Developer |
+| IMP-02 | Cloudflare WARP and DNS configuration on Telmex network blocks direct connection to MongoDB Atlas | Limits the ability to switch to Atlas as an alternative | External — ISP |
+| IMP-03 | Railway trial plan expires in ~25 days | If not renewed the backend and database go offline | Developer |
+ 
+---
+ 
+## Dependencies
+ 
+| ID | Story | Depends on | Type |
+|----|-------|------------|------|
+| DEP-01 | SP1-01 Smart likes | SP1-02 must be completed first — needs the `/my-likes` endpoint | Internal |
+| DEP-02 | SP1-03 Prevent duplicates | Requires IMP-01 to be resolved or handled via frontend only | Internal |
+| DEP-03 | SP1-06 Welcome message | Requires the user to be stored correctly in localStorage after login | Internal |
+| DEP-04 | All stories | Active Railway deployment — if the service goes down no story can be tested in production | External |
+ 
+---
 ### Definition of Done
 
 * [ ] Functionality manually tested in Netlify
