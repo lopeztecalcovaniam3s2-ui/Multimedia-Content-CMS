@@ -87,8 +87,7 @@ Feature: Smart likes on page load
 | ID | Description | Impact | Owner |
 |----|-------------|--------|-------|
 | IMP-01 | Railway free tier has insufficient disk space to create unique indexes in MongoDB | Prevents SP1-03 from being fully enforced at the database level | Developer |
-| IMP-02 | Cloudflare WARP and DNS configuration on Telmex network blocks direct connection to MongoDB Atlas | Limits the ability to switch to Atlas as an alternative | External — ISP |
-| IMP-03 | Railway trial plan expires in ~25 days | If not renewed the backend and database go offline | Developer |
+
  
 ---
  
