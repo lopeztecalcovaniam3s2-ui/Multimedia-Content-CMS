@@ -58,15 +58,6 @@ Feature: Smart likes on page load
 ```
 ---
 
-### Definition of Done
-
-- Functionality manually tested in Netlify
-- No errors in the browser console
-- Responsive on mobile and desktop
-- Changes uploaded to GitHub and redeployed in Railway/Netlify
-
----
-
 ### Technical Tasks
 
 **SP1-01 and SP1-02 — Smart Likes:**
@@ -88,5 +79,15 @@ Feature: Smart likes on page load
 
 **SP1-06 — Welcome Message:**
 1. In `index.html`, check if there's a user in localStorage and display the message. Greetings
+---
+
+
+
+### Definition of Done
+
+- Functionality manually tested in Netlify
+- No errors in the browser console
+- Responsive on mobile and desktop
+- Changes uploaded to GitHub and redeployed in Railway/Netlify
 
 ---
