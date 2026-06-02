@@ -40,28 +40,92 @@ The base product is complete and deployed in production. The following sprints a
 
 ### Sprint Acceptance Criteria
 ```gherkin
-
 Feature: Smart likes on page load
-
+ 
   Scenario: User has already liked a post
     Given the user has an active session
     And the user previously liked post "abc123"
     When they enter index.html
     Then the like button of post "abc123" appears in red
     And the button is marked with class "liked"
-
+ 
   Scenario: User has not liked a post
     Given the user has an active session
     And the user has not liked post "xyz456"
     When they enter index.html
     Then the like button of post "xyz456" appears in grey
     And the button does not have the class "liked"
-
+ 
   Scenario: User without session views posts
     Given the user has no active session
     When they enter index.html
     Then all like buttons appear in grey
     And clicking any like button redirects to login.html
+```
+ 
+```gherkin
+Feature: Prevent duplicate likes
+ 
+  Scenario: Attempt to like an already liked post
+    Given the user has an active session
+    And the user has already liked post "abc123"
+    When they click the like button of post "abc123"
+    Then the system makes DELETE to /api/posts/abc123/like
+    And the counter decrements by 1
+    And the button returns to grey
+ 
+  Scenario: Backend rejects duplicate like
+    Given the user has an active session
+    And the unique index exists in the likes collection
+    When the frontend sends POST /api/posts/abc123/like for a post already liked
+    Then the backend returns status 400
+    And the message "You have already liked this post"
+```
+ 
+```gherkin
+Feature: Post counter on profile
+ 
+  Scenario: User with publications
+    Given the user has an active session
+    And has 5 published posts
+    When they access perfil.html
+    Then the system shows "5 posts" below the username
+ 
+  Scenario: User without publications
+    Given the user has an active session
+    And has no published posts
+    When they access perfil.html
+    Then the system shows "0 posts" below the username
+```
+ 
+```gherkin
+Feature: Back button on post detail
+ 
+  Scenario: Navigate back from post detail
+    Given the user came from index.html
+    And is on post-detalle.html
+    When they click the back button
+    Then the browser returns to the previous page
+    And the scroll position is preserved
+ 
+  Scenario: Direct access to post detail
+    Given the user accessed post-detalle.html directly via URL
+    When they click the back button
+    Then the browser navigates to index.html
+```
+ 
+```gherkin
+Feature: Welcome message on index
+ 
+  Scenario: Authenticated user enters index
+    Given the user has an active session with username "juanito"
+    When they enter index.html
+    Then the header shows "Welcome, @juanito"
+ 
+  Scenario: Unauthenticated user enters index
+    Given the user has no active session
+    When they enter index.html
+    Then the header shows the "Sign in" button instead of the welcome message
 ```
 ---
 
