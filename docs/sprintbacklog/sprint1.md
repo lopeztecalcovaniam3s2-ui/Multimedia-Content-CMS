@@ -21,7 +21,7 @@ The base product is complete and deployed in production. The following sprints a
 * Buffer: 20 Hours
 
 ---
-### Sprint Goal
+###Sprint Goal
 
 > Enable users to interact with posts more precisely, seeing at all times if they have liked them, with more intuitive navigation between profiles and posts.
 
