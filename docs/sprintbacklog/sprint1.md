@@ -81,7 +81,7 @@ Feature: Smart likes on page load
 1. In `index.html`, check if there's a user in localStorage and display the message. Greetings
 ---
 ---
-### Impediments & Dependences
+
 ## Impediments
  
 | ID | Description | Impact | Owner |
