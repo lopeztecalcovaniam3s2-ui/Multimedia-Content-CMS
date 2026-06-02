@@ -32,12 +32,30 @@ The base product is complete and deployed in production. The following sprints a
 **Total:** 11 points
 
 ### Sprint Acceptance Criteria
+```gherkin
 
-- The like button displays the correct status (red = already liked, gray = not liked) upon page load
-- A user cannot like the same post more than once
-- The profile displays the total number of posts
-- The back button in post details works correctly on mobile and desktop
+Feature: Smart likes on page load
 
+  Scenario: User has already liked a post
+    Given the user has an active session
+    And the user previously liked post "abc123"
+    When they enter index.html
+    Then the like button of post "abc123" appears in red
+    And the button is marked with class "liked"
+
+  Scenario: User has not liked a post
+    Given the user has an active session
+    And the user has not liked post "xyz456"
+    When they enter index.html
+    Then the like button of post "xyz456" appears in grey
+    And the button does not have the class "liked"
+
+  Scenario: User without session views posts
+    Given the user has no active session
+    When they enter index.html
+    Then all like buttons appear in grey
+    And clicking any like button redirects to login.html
+```
 ---
 
 ### Definition of Done
