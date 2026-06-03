@@ -89,16 +89,6 @@ The base product is complete and deployed in production. The following sprints a
 
 **Week 4 hours per developer: 10h | Team total: 50h**
 
----
-
-## Total Project Effort
-
-* **Duration:** 4 weeks
-* **Developers:** 5
-* **Hours per developer per week:** 10h
-* **Total hours per week:** 50h
-* **Total project effort:** 200h
-
 --- 
 ### Sprint Backlog
 
