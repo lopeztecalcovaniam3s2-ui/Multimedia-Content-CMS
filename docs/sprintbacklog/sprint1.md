@@ -63,14 +63,6 @@ The base product is complete and deployed in production. The following sprints a
  
 ---
  
-## Sprint 2 — "Community"
-**Sprint Goal:** Allow users to comment on posts, edit their profile and find content more precisely with advanced filters.
- 
----
-## Sprint Goal
-
-> Enable users to interact with posts more precisely, seeing at all times if they have liked them, with more intuitive navigation between profiles and posts.
-
 ### Sprint Backlog
 
 | ID | Story | Description | Priority | Estimate |
