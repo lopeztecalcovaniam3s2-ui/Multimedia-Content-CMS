@@ -21,17 +21,18 @@ The base product is complete and deployed in production. The following sprints a
 
 ---
 
-## Sprint 1 — "User Experience"
+## Sprint 1 — "User Experience" and "Comunity"
+
 **Duration:** 2 weeks
 **Objective:** Improve user interaction with the platform — smart likes, smoother navigation, and real-time visual feedback.
 
 ---
 ## Sprint Parameter & Capacity Plan
-* Sprint Duration: 2 weeks
+* Sprint Duration: 4 weeks
 * Daily Commitment: 2 Hours (Monday - Friday)
-* Total Sprint Capacity: 100 Hours
-* Estimated Workload: 20 Horus
-* Buffer: 80 Hours
+* Total Sprint Capacity: 200 Hours
+* Estimated Workload: 100 Horus
+* Buffer: 100 Hours
 
 ---
  
@@ -62,7 +63,32 @@ The base product is complete and deployed in production. The following sprints a
 **Week 2 hours per developer: 10h | Team total: 50h**
  
 ---
+### Week 3
  
+| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
+|-----|-------|-------|-------|-------|-------|
+| Monday | SP1-05: Implement `history.back()` on post-detalle.html | SP1-05: Handle direct URL access fallback to index.html | SP1-01: Fix any bugs found in Week 1 smart likes | SP1-03: Final validation of duplicate like prevention | SP1-04 + SP1-06: Fix any styling issues found in Week 1 |
+| Tuesday | SP1-05: Test back button on mobile and desktop | SP1-05: Deploy and test on Netlify | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end |
+| Wednesday | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Update sprint backlog with actual story status | Update impediments and dependencies document |
+| Thursday | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo — present SP1-01, SP1-02, SP1-03 | Sprint 1 demo — present SP1-04, SP1-05, SP1-06 | Sprint 1 demo — coordinate and document feedback |
+| Friday | Sprint retrospective — what went well | Sprint retrospective — what to improve | Sprint retrospective — what to improve | Sprint 2 planning — review backlog and assign stories | Sprint 2 planning — review backlog and assign stories |
+ 
+**Week 3 hours per developer: 10h | Team total: 50h**
+ 
+---
+### Week 4
+ 
+| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
+|-----|-------|-------|-------|-------|-------|
+| Monday | SP1-05: Implement `history.back()` on post-detalle.html | SP1-05: Handle direct URL access fallback to index.html | SP1-01: Fix any bugs found in Week 1 smart likes | SP1-03: Final validation of duplicate like prevention | SP1-04 + SP1-06: Fix any styling issues found in Week 1 |
+| Tuesday | SP1-05: Test back button on mobile and desktop | SP1-05: Deploy and test on Netlify | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end |
+| Wednesday | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Update sprint backlog with actual story status | Update impediments and dependencies document |
+| Thursday | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo — present SP1-01, SP1-02, SP1-03 | Sprint 1 demo — present SP1-04, SP1-05, SP1-06 | Sprint 1 demo — coordinate and document feedback |
+| Friday | Sprint retrospective — what went well | Sprint retrospective — what to improve | Sprint retrospective — what to improve | Sprint 2 planning — review backlog and assign stories | Sprint 2 planning — review backlog and assign stories |
+ 
+**Week 4 hours per developer: 10h | Team total: 50h**
+ 
+--- 
 ### Sprint Backlog
 
 | ID | Story | Description | Priority | Estimate |
