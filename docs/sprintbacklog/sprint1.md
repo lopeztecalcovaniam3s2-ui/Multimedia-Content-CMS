@@ -35,59 +35,70 @@ The base product is complete and deployed in production. The following sprints a
 * Buffer: 100 Hours
 
 ---
- 
-### Week 1
- 
-| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
-|-----|-------|-------|-------|-------|-------|
-| Monday | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup |
-| Tuesday | SP1-02: Create `GET /api/posts/my-likes` route in `post.routes.js` | SP1-02: Create `getMisLikes` controller in `post.controller.js` | SP1-03: Research duplicate like prevention strategy | SP1-04: Add post counter logic in `perfil.html` | SP1-06: Add welcome message logic in `index.html` |
-| Wednesday | SP1-02: Test endpoint with Thunder Client | SP1-02: Deploy backend changes to Railway via GitHub push | SP1-03: Disable like button on frontend after first click | SP1-04: Style post counter in `perfil.css` | SP1-06: Style welcome message in `styles.css` |
-| Thursday | SP1-01: Fetch `/my-likes` before rendering posts in `index.html` | SP1-01: Compare post list against liked post IDs | SP1-03: Validate duplicate prevention with multiple test accounts | SP1-04: Test post counter with 0 and multiple posts | SP1-06: Test welcome message with and without active session |
-| Friday | SP1-01: Mark liked buttons with class "liked" and red color | SP1-01: Test smart likes on Netlify | SP1-03: Document frontend duplicate prevention approach | SP1-04 + SP1-06: Integration testing on Netlify | Team sync — review Week 1 progress and adjust Week 2 plan |
- 
+# Week 1 – Onboarding, Analysis and Preparation
+
+| Day       | DEV-1                                               | DEV-2                                               | DEV-3                                                | DEV-4                                               | DEV-5                                               |
+| --------- | --------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
+| Monday    | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup  | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup |
+| Tuesday   | Analyze SP1-01 requirements and dependencies        | Analyze SP1-02 backend requirements                 | Research duplicate like prevention strategy (SP1-03) | Analyze post counter requirements (SP1-04)          | Analyze welcome message requirements (SP1-06)       |
+| Wednesday | Review existing frontend post rendering flow        | Design `GET /my-likes` endpoint structure           | Document duplicate-prevention alternatives           | Review profile page structure                       | Review session management flow                      |
+| Thursday  | Prepare implementation plan for SP1-01              | Prepare controller and route design for SP1-02      | Create testing scenarios for SP1-03                  | Define counter display behavior                     | Define welcome message behavior                     |
+| Friday    | Team sync and technical review                      | Team sync and technical review                      | Team sync and technical review                       | Team sync and technical review                      | Team sync and technical review                      |
+
 **Week 1 hours per developer: 10h | Team total: 50h**
- 
+
 ---
- 
-### Week 2
- 
-| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
-|-----|-------|-------|-------|-------|-------|
-| Monday | SP1-05: Implement `history.back()` on post-detalle.html | SP1-05: Handle direct URL access fallback to index.html | SP1-01: Fix any bugs found in Week 1 smart likes | SP1-03: Final validation of duplicate like prevention | SP1-04 + SP1-06: Fix any styling issues found in Week 1 |
-| Tuesday | SP1-05: Test back button on mobile and desktop | SP1-05: Deploy and test on Netlify | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end |
-| Wednesday | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Update sprint backlog with actual story status | Update impediments and dependencies document |
-| Thursday | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo — present SP1-01, SP1-02, SP1-03 | Sprint 1 demo — present SP1-04, SP1-05, SP1-06 | Sprint 1 demo — coordinate and document feedback |
-| Friday | Sprint retrospective — what went well | Sprint retrospective — what to improve | Sprint retrospective — what to improve | Sprint 2 planning — review backlog and assign stories | Sprint 2 planning — review backlog and assign stories |
- 
+
+# Week 2 – Core Development
+
+| Day       | DEV-1                                            | DEV-2                                   | DEV-3                                       | DEV-4                                 | DEV-5                                   |
+| --------- | ------------------------------------------------ | --------------------------------------- | ------------------------------------------- | ------------------------------------- | --------------------------------------- |
+| Monday    | SP1-02: Create `GET /api/posts/my-likes` route   | SP1-02: Create `getMisLikes` controller | SP1-03: Implement duplicate like prevention | SP1-04: Add post counter logic        | SP1-06: Add welcome message logic       |
+| Tuesday   | SP1-02: Test endpoint locally                    | SP1-02: Backend validation and fixes    | SP1-03: Disable like button after click     | SP1-04: Validate counter calculations | SP1-06: Validate session-based messages |
+| Wednesday | SP1-01: Fetch `/my-likes` before rendering posts | Support integration with frontend       | SP1-03: Test with multiple accounts         | SP1-04: Style counter in `perfil.css` | SP1-06: Style welcome message           |
+| Thursday  | SP1-01: Compare posts against liked IDs          | Deploy backend changes to Railway       | SP1-03: Edge case testing                   | SP1-04: Counter UI adjustments        | SP1-06: UI adjustments                  |
+| Friday    | Internal review of smart likes implementation    | Backend documentation                   | Document duplicate-prevention solution      | Counter feature review                | Welcome feature review                  |
+
 **Week 2 hours per developer: 10h | Team total: 50h**
- 
+
 ---
-### Week 3
- 
-| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
-|-----|-------|-------|-------|-------|-------|
-| Monday | SP1-05: Implement `history.back()` on post-detalle.html | SP1-05: Handle direct URL access fallback to index.html | SP1-01: Fix any bugs found in Week 1 smart likes | SP1-03: Final validation of duplicate like prevention | SP1-04 + SP1-06: Fix any styling issues found in Week 1 |
-| Tuesday | SP1-05: Test back button on mobile and desktop | SP1-05: Deploy and test on Netlify | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end |
-| Wednesday | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Update sprint backlog with actual story status | Update impediments and dependencies document |
-| Thursday | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo — present SP1-01, SP1-02, SP1-03 | Sprint 1 demo — present SP1-04, SP1-05, SP1-06 | Sprint 1 demo — coordinate and document feedback |
-| Friday | Sprint retrospective — what went well | Sprint retrospective — what to improve | Sprint retrospective — what to improve | Sprint 2 planning — review backlog and assign stories | Sprint 2 planning — review backlog and assign stories |
- 
+
+# Week 3 – Integration and Validation
+
+| Day       | DEV-1                                         | DEV-2                              | DEV-3                                    | DEV-4                                     | DEV-5                                         |
+| --------- | --------------------------------------------- | ---------------------------------- | ---------------------------------------- | ----------------------------------------- | --------------------------------------------- |
+| Monday    | SP1-01: Mark liked buttons with class `liked` | Support frontend integration       | Validate duplicate prevention end-to-end | Test post counter with multiple scenarios | Test welcome message with and without session |
+| Tuesday   | Test smart likes on Netlify                   | Verify deployment stability        | Regression tests for likes flow          | Regression tests for profile counter      | Regression tests for welcome message          |
+| Wednesday | SP1-05: Implement `history.back()`            | SP1-05: Handle direct URL fallback | Support SP1-05 testing                   | Fix UI issues found during testing        | Fix UI issues found during testing            |
+| Thursday  | Test back button on desktop                   | Test back button on mobile         | Validate navigation edge cases           | Verify integration across pages           | Verify integration across pages               |
+| Friday    | Team integration review                       | Team integration review            | Team integration review                  | Team integration review                   | Team integration review                       |
+
 **Week 3 hours per developer: 10h | Team total: 50h**
- 
+
 ---
-### Week 4
- 
-| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
-|-----|-------|-------|-------|-------|-------|
-| Monday | SP1-05: Implement `history.back()` on post-detalle.html | SP1-05: Handle direct URL access fallback to index.html | SP1-01: Fix any bugs found in Week 1 smart likes | SP1-03: Final validation of duplicate like prevention | SP1-04 + SP1-06: Fix any styling issues found in Week 1 |
-| Tuesday | SP1-05: Test back button on mobile and desktop | SP1-05: Deploy and test on Netlify | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end |
-| Wednesday | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Update sprint backlog with actual story status | Update impediments and dependencies document |
-| Thursday | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo — present SP1-01, SP1-02, SP1-03 | Sprint 1 demo — present SP1-04, SP1-05, SP1-06 | Sprint 1 demo — coordinate and document feedback |
-| Friday | Sprint retrospective — what went well | Sprint retrospective — what to improve | Sprint retrospective — what to improve | Sprint 2 planning — review backlog and assign stories | Sprint 2 planning — review backlog and assign stories |
- 
+
+# Week 4 – Fixes, Demo and Closure
+
+| Day       | DEV-1                                 | DEV-2                              | DEV-3                                      | DEV-4                                      | DEV-5                                  |
+| --------- | ------------------------------------- | ---------------------------------- | ------------------------------------------ | ------------------------------------------ | -------------------------------------- |
+| Monday    | Full regression testing               | Full regression testing            | Full regression testing                    | Full regression testing                    | Full regression testing                |
+| Tuesday   | Bug fixing from regression testing    | Bug fixing from regression testing | Bug fixing from regression testing         | Update sprint backlog status               | Update impediments and dependencies    |
+| Wednesday | Final validation of SP1-01 and SP1-02 | Final validation of SP1-05         | Final validation of SP1-03                 | Final validation of SP1-04                 | Final validation of SP1-06             |
+| Thursday  | Sprint demo preparation               | Sprint demo preparation            | Demo presentation (SP1-01, SP1-02, SP1-03) | Demo presentation (SP1-04, SP1-05, SP1-06) | Demo coordination and feedback capture |
+| Friday    | Sprint retrospective                  | Sprint retrospective               | Sprint retrospective                       | Sprint 2 planning                          | Sprint 2 planning                      |
+
 **Week 4 hours per developer: 10h | Team total: 50h**
- 
+
+---
+
+## Total Project Effort
+
+* **Duration:** 4 weeks
+* **Developers:** 5
+* **Hours per developer per week:** 10h
+* **Total hours per week:** 50h
+* **Total project effort:** 200h
+
 --- 
 ### Sprint Backlog
 
