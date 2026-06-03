@@ -29,9 +29,9 @@ The base product is complete and deployed in production. The following sprints a
 ## Sprint Parameter & Capacity Plan
 * Sprint Duration: 2 weeks
 * Daily Commitment: 2 Hours (Monday - Friday)
-* Total Sprint Capacity: 40 Hours
+* Total Sprint Capacity: 100 Hours
 * Estimated Workload: 20 Horus
-* Buffer: 20 Hours
+* Buffer: 80 Hours
 
 ---
 
@@ -43,9 +43,22 @@ The base product is complete and deployed in production. The following sprints a
 | Thursday | SP1-01: Fetch `/my-likes` before rendering posts in `index.html` | SP1-01: Compare post list against liked post IDs | SP1-03: Validate duplicate prevention with multiple test accounts | SP1-04: Test post counter with 0 and multiple posts | SP1-06: Test welcome message with and without active session |
 | Friday | SP1-01: Mark liked buttons with class "liked" and red color | SP1-01: Test smart likes on Netlify | SP1-03: Document frontend duplicate prevention approach | SP1-04 + SP1-06: Integration testing on Netlify | Team sync — review Week 1 progress and adjust Week 2 plan |
 
----
+
 **Week 1 hours per developer: 10h | Team total: 50h**
+---
+ ### Week 2
  
+| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
+|-----|-------|-------|-------|-------|-------|
+| Monday | SP1-05: Implement `history.back()` on post-detalle.html | SP1-05: Handle direct URL access fallback to index.html | SP1-01: Fix any bugs found in Week 1 smart likes | SP1-03: Final validation of duplicate like prevention | SP1-04 + SP1-06: Fix any styling issues found in Week 1 |
+| Tuesday | SP1-05: Test back button on mobile and desktop | SP1-05: Deploy and test on Netlify | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end | Full regression testing — test all SP1 stories end to end |
+| Wednesday | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Bug fixing — address issues found in regression testing | Update sprint backlog with actual story status | Update impediments and dependencies document |
+| Thursday | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo preparation — prepare walkthrough of all features | Sprint 1 demo — present SP1-01, SP1-02, SP1-03 | Sprint 1 demo — present SP1-04, SP1-05, SP1-06 | Sprint 1 demo — coordinate and document feedback |
+| Friday | Sprint retrospective — what went well | Sprint retrospective — what to improve | Sprint retrospective — what to improve | Sprint 2 planning — review backlog and assign stories | Sprint 2 planning — review backlog and assign stories |
+ 
+**Week 2 hours per developer: 10h | Team total: 50h**
+ 
+---
 ## Sprint Goal
 
 > Enable users to interact with posts more precisely, seeing at all times if they have liked them, with more intuitive navigation between profiles and posts.
