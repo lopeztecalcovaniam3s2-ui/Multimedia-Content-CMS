@@ -34,6 +34,18 @@ The base product is complete and deployed in production. The following sprints a
 * Buffer: 20 Hours
 
 ---
+
+| Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
+|-----|-------|-------|-------|-------|-------|
+| Monday | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup |
+| Tuesday | SP1-02: Create `GET /api/posts/my-likes` route in `post.routes.js` | SP1-02: Create `getMisLikes` controller in `post.controller.js` | SP1-03: Research duplicate like prevention strategy | SP1-04: Add post counter logic in `perfil.html` | SP1-06: Add welcome message logic in `index.html` |
+| Wednesday | SP1-02: Test endpoint with Thunder Client | SP1-02: Deploy backend changes to Railway via GitHub push | SP1-03: Disable like button on frontend after first click | SP1-04: Style post counter in `perfil.css` | SP1-06: Style welcome message in `styles.css` |
+| Thursday | SP1-01: Fetch `/my-likes` before rendering posts in `index.html` | SP1-01: Compare post list against liked post IDs | SP1-03: Validate duplicate prevention with multiple test accounts | SP1-04: Test post counter with 0 and multiple posts | SP1-06: Test welcome message with and without active session |
+| Friday | SP1-01: Mark liked buttons with class "liked" and red color | SP1-01: Test smart likes on Netlify | SP1-03: Document frontend duplicate prevention approach | SP1-04 + SP1-06: Integration testing on Netlify | Team sync — review Week 1 progress and adjust Week 2 plan |
+
+---
+**Week 1 hours per developer: 10h | Team total: 50h**
+ 
 ## Sprint Goal
 
 > Enable users to interact with posts more precisely, seeing at all times if they have liked them, with more intuitive navigation between profiles and posts.
