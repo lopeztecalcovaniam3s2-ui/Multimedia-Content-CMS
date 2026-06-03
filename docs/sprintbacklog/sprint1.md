@@ -7,6 +7,19 @@
 The base product is complete and deployed in production. The following sprints are focused on improving the user experience, adding deeper social functionalities, and strengthening the system's quality.
 
 ---
+## Team
+
+ 
+| Member | Code |
+|--------|------|
+| Developer 1 | DEV-1 |
+| Developer 2 | DEV-2 |
+| Developer 3 | DEV-3 |
+| Developer 4 | DEV-4 |
+| Developer 5 | DEV-5 |
+ 
+
+---
 
 ## Sprint 1 — "User Experience"
 **Duration:** 2 weeks
