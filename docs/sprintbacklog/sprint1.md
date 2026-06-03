@@ -34,7 +34,9 @@ The base product is complete and deployed in production. The following sprints a
 * Buffer: 80 Hours
 
 ---
-
+ 
+### Week 1
+ 
 | Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
 |-----|-------|-------|-------|-------|-------|
 | Monday | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup | Project onboarding — review codebase and repo setup |
@@ -42,11 +44,12 @@ The base product is complete and deployed in production. The following sprints a
 | Wednesday | SP1-02: Test endpoint with Thunder Client | SP1-02: Deploy backend changes to Railway via GitHub push | SP1-03: Disable like button on frontend after first click | SP1-04: Style post counter in `perfil.css` | SP1-06: Style welcome message in `styles.css` |
 | Thursday | SP1-01: Fetch `/my-likes` before rendering posts in `index.html` | SP1-01: Compare post list against liked post IDs | SP1-03: Validate duplicate prevention with multiple test accounts | SP1-04: Test post counter with 0 and multiple posts | SP1-06: Test welcome message with and without active session |
 | Friday | SP1-01: Mark liked buttons with class "liked" and red color | SP1-01: Test smart likes on Netlify | SP1-03: Document frontend duplicate prevention approach | SP1-04 + SP1-06: Integration testing on Netlify | Team sync — review Week 1 progress and adjust Week 2 plan |
-
-
+ 
 **Week 1 hours per developer: 10h | Team total: 50h**
+ 
 ---
- ### Week 2
+ 
+### Week 2
  
 | Day | DEV-1 | DEV-2 | DEV-3 | DEV-4 | DEV-5 |
 |-----|-------|-------|-------|-------|-------|
@@ -57,6 +60,11 @@ The base product is complete and deployed in production. The following sprints a
 | Friday | Sprint retrospective — what went well | Sprint retrospective — what to improve | Sprint retrospective — what to improve | Sprint 2 planning — review backlog and assign stories | Sprint 2 planning — review backlog and assign stories |
  
 **Week 2 hours per developer: 10h | Team total: 50h**
+ 
+---
+ 
+## Sprint 2 — "Community"
+**Sprint Goal:** Allow users to comment on posts, edit their profile and find content more precisely with advanced filters.
  
 ---
 ## Sprint Goal
