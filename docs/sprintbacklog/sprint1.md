@@ -12,11 +12,11 @@ The base product is complete and deployed in production. The following sprints a
  
 | Member | Code |
 |--------|------|
-| Developer 1 | DEV-1 |
-| Developer 2 | DEV-2 |
-| Developer 3 | DEV-3 |
-| Developer 4 | DEV-4 |
-| Developer 5 | DEV-5 |
+| Arzabal Flores| DEV-1 |
+| Damian Tepole | DEV-2 |
+| Gil GUzman | DEV-3 |
+| Olivares Luengas | DEV-4 |
+| Lopez Tecalco | DEV-5 |
  
 
 ---
